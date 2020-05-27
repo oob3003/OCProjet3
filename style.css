@@ -1,0 +1,61 @@
+main {
+  height: 100%;
+  width: 1500px;
+  display: flex;
+  flex-direction: column;
+}
+
+#menus {
+  background: purple;
+  height: 2010px;
+  width: 1500px;
+  display: grid;
+  grid-template-columns: 535px 535px;
+  grid-column-gap: 100px;
+  grid-row-gap: 90px;
+  justify-content: center;
+}
+
+.menus__menu1 {
+  cursor: pointer;
+  text-align: center;
+  background: #fcdfdb;
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+  color: blue;
+}
+
+.menus__menu2 {
+  cursor: pointer;
+  text-align: center;
+  background: #fff5fe;
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+  color: red;
+}
+
+.menus__menu3 {
+  cursor: pointer;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+  color: yellow;
+}
+
+.menus__menu4 {
+  cursor: pointer;
+  text-align: center;
+  background: #fdfffd;
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+  color: green;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 175px;
+}
+
+/*# sourceMappingURL=style.css.map */
