@@ -1,14 +1,19 @@
+header {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main {
   height: 100%;
-  width: 1500px;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
 }
 
 #menus {
   background: purple;
-  height: 2010px;
-  width: 1500px;
   display: grid;
   grid-template-columns: 535px 535px;
   grid-column-gap: 100px;
