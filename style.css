@@ -1,7 +1,7 @@
 header {
-  background-color: green;
-  color: pink;
-  height: 255px;
+  background-color: #579c87;
+  color: #fdcb46;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +24,7 @@ footer {
   margin-left: 40px;
 }
 .nav .nav__linkContact {
+  justify-content: end;
   font-weight: bold;
   margin-right: 40px;
 }
@@ -45,8 +46,8 @@ main {
   justify-content: center;
   margin-bottom: 1em;
 }
-.menus__menu1 {
-  border: 10px solid red;
+.menus__menu1, .menus__menu2, .menus__menu3, .menus__menu4 {
+  box-shadow: 0px 0px 20px #b6b6b6;
 }
 
 .menus__menu1 {
@@ -65,7 +66,6 @@ main {
   padding: 1.5rem;
   margin-top: 0.5rem;
   color: red;
-  box-shadow: 20px 20px 20px #f1f1f1;
 }
 
 .menus__menu3 {
@@ -75,7 +75,6 @@ main {
   padding: 1.5rem;
   margin-bottom: 0.5rem;
   color: yellow;
-  box-shadow: 10px 10px 10px #f1f1f1;
 }
 
 .menus__menu4 {
@@ -85,14 +84,26 @@ main {
   padding: 1.5rem;
   margin-bottom: 0.5rem;
   color: green;
-  box-shadow: 10px 10px 10px #f1f1f1;
 }
 
 .btn {
   background-color: #579c87;
   color: #fdcb46;
   display: flex;
-  border-radius: 10px;
+  width: 40%;
+  height: 3em;
+  border-radius: 9px;
+}
+
+.btn {
+  background-color: #579c87;
+  color: #fdcb46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 3em;
+  border-radius: 9px;
 }
 
 /*# sourceMappingURL=style.css.map */
