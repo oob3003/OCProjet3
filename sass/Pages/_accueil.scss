@@ -8,7 +8,7 @@ main
     
     
     }
-#menus
+.menus
     {   
         background: #ffffff;
         display: grid;
@@ -17,10 +17,9 @@ main
         grid-row-gap: 90px;
         justify-content: center;
         margin-bottom: 1em;
-            &__menu1
-                {
-                    @include: boxing-shadow;
-                }
+        &__menu1 {
+            @include boxing-shadow;
+        }
         
     }
 .menus__menu1
@@ -31,7 +30,9 @@ main
         background: $colorFondMenu1;
         padding: 1.5rem;
         margin-top: 0.5rem;
-        color: $colorFooter;
+        color: $colorFondFooter;
+        
+
     }  
 .menus__menu2
     {
@@ -41,7 +42,7 @@ main
         padding: 1.5rem;
         margin-top: 0.5rem;
         color: red;
-        box-shadow: 10px 10px 10px #f1f1f1;
+        box-shadow: 20px 20px 20px #f1f1f1;
     }
 .menus__menu3
     {

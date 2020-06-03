@@ -1,18 +1,98 @@
-/* Error: Expected identifier.
- *    ,
- * 22 |                     @include: boxing-shadow;
- *    |                             ^
- *    '
- *   sass\pages\_accueil.scss 22:29  @import
- *   sass\main.scss 6:9              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected identifier.\a    \2577 \a 22 \2502                      @include: boxing-shadow;\d\a    \2502                              ^\a    \2575 \a   sass\\pages\\_accueil.scss 22:29  @import\a   sass\\main.scss 6:9              root stylesheet";
+header {
+  background-color: green;
+  color: pink;
+  height: 255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+footer {
+  background: #579c87;
+  color: #fdcb46;
+  height: 140px;
+  display: flex;
+  margin-top: 0.5em;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav .nav__linkMentions {
+  color: pink;
+  margin-left: 40px;
+}
+.nav .nav__linkContact {
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+main {
+  height: 100%;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menus {
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 535px 535px;
+  grid-column-gap: 100px;
+  grid-row-gap: 90px;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.menus__menu1 {
+  border: 10px solid red;
+}
+
+.menus__menu1 {
+  cursor: pointer;
+  text-align: center;
+  background: #fcdfdb;
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+  color: #579c87;
+}
+
+.menus__menu2 {
+  cursor: pointer;
+  text-align: center;
+  background: #fff5fe;
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+  color: red;
+  box-shadow: 20px 20px 20px #f1f1f1;
+}
+
+.menus__menu3 {
+  cursor: pointer;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: yellow;
+  box-shadow: 10px 10px 10px #f1f1f1;
+}
+
+.menus__menu4 {
+  cursor: pointer;
+  text-align: center;
+  background: #fdfffd;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: green;
+  box-shadow: 10px 10px 10px #f1f1f1;
+}
+
+.btn {
+  background-color: #579c87;
+  color: #fdcb46;
+  display: flex;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
