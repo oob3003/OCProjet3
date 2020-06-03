@@ -4,18 +4,19 @@ main
     max-width: 1500px;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    
     
     }
 #menus
     {   
-        background: purple;
+        background: #ffffff;
         display: grid;
         grid-template-columns: 535px 535px;
         grid-column-gap: 100px;
         grid-row-gap: 90px;
         justify-content: center;
-        
+        margin-bottom: 1em;
         
     }
 .menus__menu1
@@ -27,7 +28,8 @@ main
         padding: 1.5rem;
         margin-top: 0.5rem;
         color: blue;
-    }
+        border: 10px solid black;
+    }  
 .menus__menu2
     {
         cursor: pointer;
@@ -36,6 +38,7 @@ main
         padding: 1.5rem;
         margin-top: 0.5rem;
         color: red;
+        box-shadow: 10px 10px 10px #f1f1f1;
     }
 .menus__menu3
     {
@@ -43,8 +46,9 @@ main
         text-align: center;
         background: $colorFondMenu3;
         padding: 1.5rem;
-        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
         color: yellow;
+        box-shadow: 10px 10px 10px #f1f1f1;
     }
 .menus__menu4
     {
@@ -52,12 +56,14 @@ main
         text-align: center;
         background: $colorFondMenu4;
         padding: 1.5rem;
-        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
         color: green;
+        box-shadow: 10px 10px 10px #f1f1f1;
     }
 .btn
     {
+        background-color: #579c87;
+        color: #fdcb46;
         display: flex;
-        justify-content: center;
-        margin-top: 175px;
+        border-radius: 10px;
     }
