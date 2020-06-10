@@ -10,22 +10,23 @@ header {
 footer {
   background: #579c87;
   color: #fdcb46;
+  font-size: x-large;
   height: 140px;
   display: flex;
-  margin-top: 0.5em;
+  margin-top: 1.5em;
 }
 
 .nav {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .nav .nav__linkMentions {
-  color: pink;
   margin-left: 40px;
 }
 .nav .nav__linkContact {
   justify-content: end;
-  font-weight: bold;
   margin-right: 40px;
 }
 
@@ -89,20 +90,12 @@ main {
 .btn {
   background-color: #579c87;
   color: #fdcb46;
-  display: flex;
-  width: 40%;
-  height: 3em;
-  border-radius: 9px;
-}
-
-.btn {
-  background-color: #579c87;
-  color: #fdcb46;
+  font-size: xx-large;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40%;
-  height: 3em;
+  height: 2em;
   border-radius: 9px;
 }
 
