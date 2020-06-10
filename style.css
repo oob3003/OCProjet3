@@ -30,6 +30,11 @@ footer {
   margin-right: 40px;
 }
 
+a {
+  text-decoration: none;
+  color: #fdcb46;
+}
+
 main {
   height: 100%;
   max-width: 1500px;
@@ -50,40 +55,32 @@ main {
 .menus__menu1, .menus__menu2, .menus__menu3, .menus__menu4 {
   box-shadow: 0px 0px 20px #b6b6b6;
 }
-
 .menus__menu1 {
-  cursor: pointer;
   text-align: center;
-  background: #fcdfdb;
   padding: 1.5rem;
   margin-top: 0.5rem;
+  background-color: #fcdfdb;
   color: #579c87;
 }
-
 .menus__menu2 {
-  cursor: pointer;
   text-align: center;
-  background: #fff5fe;
   padding: 1.5rem;
   margin-top: 0.5rem;
+  background-color: #fff5fe;
   color: red;
 }
-
 .menus__menu3 {
-  cursor: pointer;
   text-align: center;
-  background: #f9f9f9;
   padding: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: #f9f9f9;
   color: yellow;
 }
-
 .menus__menu4 {
-  cursor: pointer;
   text-align: center;
-  background: #fdfffd;
   padding: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: #fdfffd;
   color: green;
 }
 

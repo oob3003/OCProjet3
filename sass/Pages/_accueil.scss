@@ -20,44 +20,17 @@ main
         &__menu1, &__menu2, &__menu3, &__menu4 {
             @include boxing-shadow;
         }
-        
+        &__menu1 {
+            @include boxing-appearance($colorFondMenu1,$colorFondVert);  
+        }
+        &__menu2 {
+            @include boxing-appearance($colorFondMenu2,red);  
+        }
+        &__menu3 {
+            @include boxing-appearance($colorFondMenu3,yellow);  
+        }
+        &__menu4 {
+            @include boxing-appearance($colorFondMenu4,green);  
+        }
     }
-.menus__menu1
-    {
-        
-        cursor: pointer;
-        text-align: center;
-        background: $colorFondMenu1;
-        padding: 1.5rem;
-        margin-top: 0.5rem;
-        color: $colorFondVert;
-        
-
-    }  
-.menus__menu2
-    {
-        cursor: pointer;
-        text-align: center;
-        background: $colorFondMenu2;
-        padding: 1.5rem;
-        margin-top: 0.5rem;
-        color: red;
-    }
-.menus__menu3
-    {
-        cursor: pointer;
-        text-align: center;
-        background: $colorFondMenu3;
-        padding: 1.5rem;
-        margin-bottom: 0.5rem;
-        color: yellow;
-    }
-.menus__menu4
-    {
-        cursor: pointer;
-        text-align: center;
-        background: $colorFondMenu4;
-        padding: 1.5rem;
-        margin-bottom: 0.5rem;
-        color: green;
-    }
+    
