@@ -12,16 +12,19 @@ main
     {   
         background: #ffffff;
         display: grid;
-        grid-template-columns: 535px 535px;
-        grid-column-gap: 100px;
-        grid-row-gap: 90px;
-        justify-content: center;
+        grid-template-columns: 33vw 33vw;
+        grid-template-rows: 33vh 33vh;
+        grid-column-gap: 6vw;
+        grid-row-gap: 11vh;
         margin-bottom: 1em;
         &__menu1, &__menu2, &__menu3, &__menu4 {
             @include boxing-shadow;
+            &--zoom {
+                @include zoomEffect;
+            }
         }
         &__menu1 {
-            @include boxing-appearance($colorFondMenu1,$colorFondVert);  
+            @include boxing-appearance($colorFondMenu1,orange);
         }
         &__menu2 {
             @include boxing-appearance($colorFondMenu2,red);  
@@ -30,7 +33,10 @@ main
             @include boxing-appearance($colorFondMenu3,yellow);  
         }
         &__menu4 {
-            @include boxing-appearance($colorFondMenu4,green);  
+            @include boxing-appearance($colorFondMenu4,green);
         }
     }
-    
+
+.double-croche {
+        color: blue;
+}
