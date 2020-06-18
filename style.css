@@ -13,7 +13,6 @@ footer {
   font-size: x-large;
   height: 140px;
   display: flex;
-  margin-top: 1.5em;
 }
 
 .nav {
@@ -41,26 +40,28 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .menus {
   background: #ffffff;
   display: grid;
   grid-template-columns: 33vw 33vw;
-  grid-template-rows: 33vh 33vh;
+  grid-template-rows: 100vh 100vh;
   grid-column-gap: 6vw;
   grid-row-gap: 11vh;
-  margin-bottom: 1em;
 }
 .menus__menu1, .menus__menu2, .menus__menu3, .menus__menu4 {
   box-shadow: 0px 0px 20px #b6b6b6;
 }
 .menus__menu1--zoom, .menus__menu2--zoom, .menus__menu3--zoom, .menus__menu4--zoom {
   transform: scale(1);
-  transition: transform 500ms;
+  transition: transform 600ms, opacity 1000ms;
 }
 .menus__menu1--zoom:hover, .menus__menu2--zoom:hover, .menus__menu3--zoom:hover, .menus__menu4--zoom:hover {
-  transform: scale(1.15);
+  transform: scale(1.5);
+  opacity: 0.6;
 }
 .menus__menu1 {
   display: flex;
@@ -70,7 +71,8 @@ main {
   padding: 1.5rem;
   margin-top: 0.5rem;
   background-color: #fcdfdb;
-  color: orange;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .menus__menu2 {
   display: flex;
@@ -80,7 +82,7 @@ main {
   padding: 1.5rem;
   margin-top: 0.5rem;
   background-color: #fff5fe;
-  color: red;
+  color: black;
 }
 .menus__menu3 {
   display: flex;
@@ -104,7 +106,33 @@ main {
 }
 
 .double-croche {
-  color: blue;
+  background: #ff5656;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #ff5656 0%, #ffc69e 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ff5656 0%, #ffc69e 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ff5656 0%, #ffc69e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff5656", endColorstr="#ffc69e",GradientType=1 );
+  /* IE6-9 */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.menus__menu2--zoom h1 {
+  background: #ff5656;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #ff5656 0%, #ffc69e 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ff5656 0%, #ffc69e 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ff5656 0%, #ffc69e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff5656", endColorstr="#ffc69e",GradientType=1 );
+  /* IE6-9 */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .btn {
@@ -117,6 +145,7 @@ main {
   width: 40%;
   height: 2em;
   border-radius: 9px;
+  margin-top: 10vh;
 }
 
 /*# sourceMappingURL=style.css.map */
