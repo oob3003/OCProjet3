@@ -8,6 +8,10 @@ header {
 }
 
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background: #579c87;
   color: #fdcb46;
   font-size: x-large;
@@ -28,6 +32,24 @@ footer {
   justify-content: end;
   margin-right: 40px;
 }
+.nav .nav__linkMentions:hover, .nav .nav__linkContact:hover {
+  animation: shake 400ms;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(0px, 1px);
+  }
+  25% {
+    transform: translate(1px, 2px);
+  }
+  50% {
+    transform: translate(2px, -1px);
+  }
+  100% {
+    transform: translate(0px, 2px);
+  }
+}
 
 a {
   text-decoration: none;
@@ -41,7 +63,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-bottom: 28vh;
 }
 
 .menus {
@@ -54,85 +76,139 @@ main {
 }
 .menus__menu1, .menus__menu2, .menus__menu3, .menus__menu4 {
   box-shadow: 0px 0px 20px #b6b6b6;
+  height: 100%;
 }
 .menus__menu1--zoom, .menus__menu2--zoom, .menus__menu3--zoom, .menus__menu4--zoom {
   transform: scale(1);
   transition: transform 600ms, opacity 1000ms;
 }
 .menus__menu1--zoom:hover, .menus__menu2--zoom:hover, .menus__menu3--zoom:hover, .menus__menu4--zoom:hover {
-  transform: scale(1.5);
+  transform: scale(1.4);
   opacity: 0.6;
 }
 .menus__menu1 {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  padding: 1.5rem;
-  margin-top: 0.5rem;
   background-color: #fcdfdb;
-  color: black;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-.menus__menu2 {
+.menus__menu1--zoom {
+  height: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding: 1.5rem;
-  margin-top: 0.5rem;
-  background-color: #fff5fe;
   color: black;
 }
-.menus__menu3 {
+.menus__menu2--zoom {
+  height: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding: 1.5rem;
-  margin-top: 0.5rem;
-  background-color: #f9f9f9;
+  color: #c77412;
+}
+.menus__menu3--zoom {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
   color: yellow;
 }
-.menus__menu4 {
+.menus__menu4--zoom {
+  height: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding: 1.5rem;
-  margin-top: 0.5rem;
-  background-color: #fdfffd;
   color: green;
 }
 
 .double-croche {
-  background: #ff5656;
+  background: #f04a5e;
   /* Old browsers */
-  background: -moz-linear-gradient(left, #ff5656 0%, #ffc69e 100%);
+  background: -moz-linear-gradient(left, #f04a5e 0%, #f78f6a 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #ff5656 0%, #ffc69e 100%);
+  background: -webkit-linear-gradient(left, #f04a5e 0%, #f78f6a 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #ff5656 0%, #ffc69e 100%);
+  background: linear-gradient(to right, #f04a5e 0%, #f78f6a 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff5656", endColorstr="#ffc69e",GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
   /* IE6-9 */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
+.menus__menu1--zoom h1 {
+  font-family: Lucida Handwriting;
+}
+
+.menus__menu1--zoom p {
+  font-size: 2em;
+}
+
 .menus__menu2--zoom h1 {
-  background: #ff5656;
+  background: #d8852e;
   /* Old browsers */
-  background: -moz-linear-gradient(left, #ff5656 0%, #ffc69e 100%);
+  background: -moz-linear-gradient(left, #d8852e 0%, #905bfd 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #ff5656 0%, #ffc69e 100%);
+  background: -webkit-linear-gradient(left, #d8852e 0%, #905bfd 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #ff5656 0%, #ffc69e 100%);
+  background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff5656", endColorstr="#ffc69e",GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
   /* IE6-9 */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  font-family: Edwardian Script ITC;
+  Font-size: 2.5em;
+}
+
+.menus__menu2--zoom p {
+  font-family: Dante;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.menus__menu3--zoom h1 {
+  background: #0431df;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #0431df 0%, #0887fb 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #0431df 0%, #0887fb 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
+  /* IE6-9 */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: Brush Script MT;
+  font-size: 2.5em;
+}
+
+.menus__menu3--zoom p {
+  font-size: 2em;
+}
+
+.menus__menu4--zoom h1 {
+  background: #42973c;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #42973c 0%, #bfff7e 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #42973c 0%, #bfff7e 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
+  /* IE6-9 */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: MV Boli;
+  font-style: italic;
+  font-size: 1.9em;
+}
+
+.menus__menu4--zoom p {
+  font-size: 2em;
 }
 
 .btn {
@@ -146,6 +222,27 @@ main {
   height: 2em;
   border-radius: 9px;
   margin-top: 10vh;
+}
+
+.btn__point1, .btn__point3 {
+  position: relative;
+  animation: bounce 0.7s ease infinite;
+}
+
+@keyframes bounce {
+  from {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 10px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+.btn__point2 {
+  position: relative;
+  animation: bounce 0.35s ease infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

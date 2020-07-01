@@ -6,9 +6,7 @@ main
     flex-direction: column;
     align-items: center;
     margin-top: 10vh;
-    margin-bottom: 10vh;
-    
-    
+    margin-bottom: 28vh;
     }
 .menus
     {   
@@ -20,29 +18,60 @@ main
         grid-row-gap: 11vh;
         &__menu1, &__menu2, &__menu3, &__menu4 {
             @include boxing-shadow;
+            height: 100%;
             &--zoom {
                 @include zoomEffect;
             }
         }
         &__menu1 {
+            background-color: $colorFondMenu1;
+        }
+        &__menu1--zoom {
             @include boxing-appearance($colorFondMenu1, black);
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
-        &__menu2 {
-            @include boxing-appearance($colorFondMenu2,black);
+        &__menu2--zoom {
+            @include boxing-appearance($colorFondMenu2, #c77412);
         }
-        &__menu3 {
+        &__menu3--zoom {
             @include boxing-appearance($colorFondMenu3,yellow);  
         }
-        &__menu4 {
+        &__menu4--zoom {
             @include boxing-appearance($colorFondMenu4,green);
         }
     }
-
 .double-croche {
-    @include colorNameMenu($colorFondMenu1, $colorFondMenu2);
-    
+    @include colorNameMenu($colorStartMenu1, $colorEndMenu1);  
+}
+.menus__menu1--zoom h1 {
+    font-family: Lucida Handwriting;
+}
+.menus__menu1--zoom p{
+    font-size: 2em;
 }
 .menus__menu2--zoom h1 {
-    @include colorNameMenu($colorFondMenu1, $colorFondMenu2);
+    @include colorNameMenu($colorStartMenu2, $colorEndMenu2);
+    font-family: Edwardian Script ITC;
+    Font-size: 2.5em;
+}
+.menus__menu2--zoom p {
+    font-family: Dante;
+    font-weight: bold;
+    font-size: 2em; 
+}
+.menus__menu3--zoom h1 {
+    @include colorNameMenu($colorStartMenu3, $colorEndMenu3);
+    font-family: Brush Script MT;
+    font-size: 2.5em;
+}
+.menus__menu3--zoom p {
+    font-size: 2em;
+}
+.menus__menu4--zoom h1 {
+    @include colorNameMenu($colorStartMenu4, $colorEndMenu4);
+    font-family: MV Boli;
+    font-style: italic;
+    font-size: 1.9em;
+}
+.menus__menu4--zoom p {
+    font-size: 2em;
 }
