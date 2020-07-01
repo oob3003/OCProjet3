@@ -1,5 +1,7 @@
 header {
   background-color: #579c87;
+  font-family: Berlin Sans FB;
+  font-size: 3em;
   color: #fdcb46;
   height: 250px;
   display: flex;
@@ -14,7 +16,7 @@ footer {
   width: 100%;
   background: #579c87;
   color: #fdcb46;
-  font-size: x-large;
+  font-size: xx-large;
   height: 140px;
   display: flex;
 }
@@ -54,6 +56,10 @@ footer {
 a {
   text-decoration: none;
   color: #fdcb46;
+}
+
+body {
+  margin: 0;
 }
 
 main {
@@ -125,11 +131,11 @@ main {
 .double-croche {
   background: #f04a5e;
   /* Old browsers */
-  background: -moz-linear-gradient(left, #f04a5e 0%, #f78f6a 100%);
+  background: -moz-linear-gradient(top left, #f04a5e 0%, #f78f6a 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #f04a5e 0%, #f78f6a 100%);
+  background: -webkit-linear-gradient(top left, #f04a5e 0%, #f78f6a 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #f04a5e 0%, #f78f6a 100%);
+  background: linear-gradient(to bottom right, #f04a5e 0%, #f78f6a 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
   /* IE6-9 */
@@ -137,7 +143,7 @@ main {
   -webkit-background-clip: text;
 }
 
-.menus__menu1--zoom h1 {
+.menus__menu1--zoom h1, .menus__menu1--zoom p {
   font-family: Lucida Handwriting;
 }
 
@@ -148,11 +154,11 @@ main {
 .menus__menu2--zoom h1 {
   background: #d8852e;
   /* Old browsers */
-  background: -moz-linear-gradient(left, #d8852e 0%, #905bfd 100%);
+  background: -moz-linear-gradient(top left, #d8852e 0%, #905bfd 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #d8852e 0%, #905bfd 100%);
+  background: -webkit-linear-gradient(top left, #d8852e 0%, #905bfd 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
+  background: linear-gradient(to bottom right, #d8852e 0%, #905bfd 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
   /* IE6-9 */
@@ -171,11 +177,11 @@ main {
 .menus__menu3--zoom h1 {
   background: #0431df;
   /* Old browsers */
-  background: -moz-linear-gradient(left, #0431df 0%, #0887fb 100%);
+  background: -moz-linear-gradient(top left, #0431df 0%, #0887fb 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #0431df 0%, #0887fb 100%);
+  background: -webkit-linear-gradient(top left, #0431df 0%, #0887fb 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
+  background: linear-gradient(to bottom right, #0431df 0%, #0887fb 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
   /* IE6-9 */
@@ -186,17 +192,19 @@ main {
 }
 
 .menus__menu3--zoom p {
+  font-family: Lucida Handwriting;
   font-size: 2em;
+  color: #0887fb;
 }
 
 .menus__menu4--zoom h1 {
   background: #42973c;
   /* Old browsers */
-  background: -moz-linear-gradient(left, #42973c 0%, #bfff7e 100%);
+  background: -moz-linear-gradient(top left, #42973c 0%, #bfff7e 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #42973c 0%, #bfff7e 100%);
+  background: -webkit-linear-gradient(top left, #42973c 0%, #bfff7e 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
+  background: linear-gradient(to bottom right, #42973c 0%, #bfff7e 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
   /* IE6-9 */
@@ -208,7 +216,9 @@ main {
 }
 
 .menus__menu4--zoom p {
+  font-family: Lucida Handwriting;
   font-size: 2em;
+  color: #72bf56;
 }
 
 .btn {
@@ -224,9 +234,9 @@ main {
   margin-top: 10vh;
 }
 
-.btn__point1, .btn__point3 {
+.btn__point1, .btn__point2, .btn__point3 {
   position: relative;
-  animation: bounce 0.7s ease infinite;
+  animation: bounce 900ms ease infinite;
 }
 
 @keyframes bounce {
@@ -234,15 +244,18 @@ main {
     bottom: 0px;
   }
   50% {
-    bottom: 10px;
+    bottom: 5px;
   }
   to {
     bottom: 0px;
   }
 }
 .btn__point2 {
-  position: relative;
-  animation: bounce 0.35s ease infinite;
+  animation-delay: 300ms;
+}
+
+.btn__point3 {
+  animation-delay: 550ms;
 }
 
 /*# sourceMappingURL=style.css.map */

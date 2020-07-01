@@ -10,16 +10,18 @@
     border-radius: 9px;
     margin-top: 10vh;
 }
-.btn__point1, .btn__point3 {
+.btn__point1, .btn__point2, .btn__point3 {
     position: relative;
-    animation: bounce 0.7s ease infinite;
+    animation: bounce 900ms ease infinite;
 }
 @keyframes bounce{
     from {bottom: 0px;}
-    50%  {bottom: 10px;}
+    50%  {bottom: 5px;}
     to   {bottom: 0px;}
 }
 .btn__point2 {
-    position: relative;
-    animation: bounce 0.35s ease infinite;
+    animation-delay: 300ms;
+}
+.btn__point3 {
+    animation-delay: 550ms;
 }

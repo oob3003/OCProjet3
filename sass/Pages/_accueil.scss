@@ -1,12 +1,16 @@
+body
+    {
+        margin: 0;
+    }
 main 
     {
-    height: 100%;
-    max-width: 1500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10vh;
-    margin-bottom: 28vh;
+        height: 100%;
+        max-width: 1500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vh;
+        margin-bottom: 28vh;
     }
 .menus
     {   
@@ -42,8 +46,10 @@ main
 .double-croche {
     @include colorNameMenu($colorStartMenu1, $colorEndMenu1);  
 }
-.menus__menu1--zoom h1 {
-    font-family: Lucida Handwriting;
+.menus__menu1--zoom 
+{
+    & h1, & p {
+    font-family: $fontFamilyAccueilMenu;}
 }
 .menus__menu1--zoom p{
     font-size: 2em;
@@ -64,7 +70,9 @@ main
     font-size: 2.5em;
 }
 .menus__menu3--zoom p {
+    font-family: $fontFamilyAccueilMenu;
     font-size: 2em;
+    color: $colorEndMenu3;
 }
 .menus__menu4--zoom h1 {
     @include colorNameMenu($colorStartMenu4, $colorEndMenu4);
@@ -73,5 +81,7 @@ main
     font-size: 1.9em;
 }
 .menus__menu4--zoom p {
+    font-family: $fontFamilyAccueilMenu;
     font-size: 2em;
+    color: $colorPolice4;
 }
