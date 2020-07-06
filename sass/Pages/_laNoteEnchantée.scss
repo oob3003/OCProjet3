@@ -1,0 +1,27 @@
+.texte__entrees--Lne, .texte__plats--Lne
+    {
+        display: grid;
+        grid-template-columns: 60vw 15vw;
+        grid-template-rows: 5vh 5vh;
+        
+    }
+h2
+    {
+        text-align: center;
+    }
+span
+    {
+        display: flex;
+        justify-content: flex-end;
+    }
+.signature 
+    {
+        display: grid;
+        grid-template-columns: 15vw 60vw;
+        text-align: center;
+    }
+.double-croche
+    {
+            justify-content: flex-end;
+    }
+    
