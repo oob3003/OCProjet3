@@ -32,7 +32,13 @@
         opacity: 0.60;
     }
 }
-@mixin underlineEffect {
-        
+@mixin underlineEffect($baseColor, $effectColor) {
+    font-size: x-large;
+    background: linear-gradient(to top, $baseColor 2px, $effectColor 2px, transparent 10px) no-repeat;
+    background-size: 0% 100%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-size 400ms;
+    width: fit-content;
 }
 
