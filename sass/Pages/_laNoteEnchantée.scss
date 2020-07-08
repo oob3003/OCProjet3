@@ -1,7 +1,20 @@
+h4
+    {
+       font-family: Calibri;
+       font-size: 3em;
+       display: flex;
+       justify-content: center;
+       margin-bottom: 1em;
+    }
 .carte 
     {
         background-color: $colorFondMenu1;
         font-family: $fontFamilyAccueilMenu;
+        margin-top: 2em;
+        margin-right: 5em;
+        margin-bottom: 14em;
+        margin-left: 5em;
+        @include boxing-shadow;
     }
 .laNoteEnchantee
     {
@@ -62,10 +75,11 @@ span
         display: flex;
         justify-content: center;
         margin-top: 3em;
-        padding-bottom: 10em;
+        padding-bottom: 2em;
     }
-.double-croche 
+.double-croche.sign
     {
+        font-size: xx-large;
         margin-right: 1em;
     }
     
