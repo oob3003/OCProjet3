@@ -41,12 +41,20 @@
     transition: background-size 400ms;
     width: fit-content;
 }
-@mixin effectCartelCALF($textColor)  {
+@mixin effectCarte($textColor)  {
     content:"";
     display: flex;
     width: 30%;
     height: 4px;
     background-color: $textColor;
+}
+@mixin alineStyleText($textColor) {
+    color: $textColor;
+    font-size: large;
+    padding-left: 0;
+    margin-right: 10%;
+    margin-bottom: 2.5em;
+    margin-left: 10%;
 }
 
 

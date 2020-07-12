@@ -1,0 +1,81 @@
+h4
+    {
+       font-family: Calibri;
+       font-size: 3em;
+       display: flex;
+       justify-content: center;
+       margin-bottom: 1em;
+    }
+.cartelDDP
+    {
+        background-color: $colorFondCarte3;
+        font-family: $fontFamilyCarte3;
+        margin-top: 2em;
+        margin-right: 5em;
+        margin-bottom: 14em;
+        margin-left: 5em;
+        @include boxing-shadow;
+    }
+.leDeliceDesPapilles
+    {
+        font-family: Script MT;
+        font-size: 45px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 3em;
+        padding-bottom: 1.5em;
+        @include colorNameMenu($colorStartMenu3, $colorEndMenu3)
+    }
+.carteMenulDDP
+    {
+        margin: auto;
+        max-width: 80%;
+        padding-bottom: 4em;
+    
+        &__effect--lDDPentrees, &__effect--lDDPplats, &__effect--lDDPdesserts
+        {
+            display: flex;
+            align-items: center;
+        & h2
+            {   
+                @include underlineEffect($colorStartMenu3, $colorEndMenu3);
+            }
+        }
+        &__effect--lDDPentrees+ul, &__effect--lDDPplats+ul, &__effect--lDDPdesserts+ul
+        {
+            @include alineStyleText(black);
+        }
+    /*partie entrées*/
+        &__effect--lDDPentrees::before, &__effect--lDDPentrees::after
+        {
+            @include effectCarte($colorEntrees3);
+        }
+    /*partie plats*/
+        &__effect--lDDPplats::before, &__effect--lDDPplats::after 
+        {
+            @include effectCarte($colorPlats3);
+        }
+    /*partie desserts*/
+        &__effect--lDDPdesserts::before, &__effect--lDDPdesserts::after
+        {
+            @include effectCarte($colorDesserts3);
+        }
+    }
+li
+    { 
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+h2:hover 
+    {
+        background-size: 100% 100%;
+    }
+  
+span
+    {
+        display: flex;
+        justify-content: flex-end;
+    }
+    

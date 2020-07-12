@@ -35,7 +35,11 @@ h4
         &__effect--lCALFentrees, &__effect--lCALFplats, &__effect--lCALFdesserts
         {
             display: flex;
-            align-items: center;
+            align-items: center;    
+        }
+        & h2
+        {   
+            @include underlineEffect($colorStartMenu2, $colorEndMenu2);
         }
     /*partie entrées*/
         &__effect--lCALFentrees
@@ -44,11 +48,11 @@ h4
         }
         &__effect--lCALFentrees::before, &__effect--lCALFentrees::after
         {
-            @include effectCartelCALF($colorEntrees2);
+            @include effectCarte($colorEntrees2);
         }
         &__effect--lCALFentrees+ul
         {
-            color: $colorEntrees2;
+            @include alineStyleText($colorEntrees2);
         }
     /*partie plats*/
         &__effect--lCALFplats
@@ -57,11 +61,11 @@ h4
         }
         &__effect--lCALFplats::before, &__effect--lCALFplats::after 
         {
-            @include effectCartelCALF($colorPlats2);
+            @include effectCarte($colorPlats2);
         }
         &__effect--lCALFplats+ul
         {
-            color: $colorPlats2;
+            @include alineStyleText($colorPlats2);
         }
     /*partie desserts*/
         &__effect--lCALFdesserts
@@ -71,28 +75,21 @@ h4
 
         &__effect--lCALFdesserts::before, &__effect--lCALFdesserts::after
         {
-            @include effectCartelCALF($colorDesserts2);
+            @include effectCarte($colorDesserts2);
         }
         &__effect--lCALFdesserts+ul
         {
-            color: $colorDesserts2;
+            @include alineStyleText($colorDesserts2);
         }
     }
-ul
-    {
-        padding-left: 0;
-        margin-bottom: 2.5em;
-    }
+
 li
     { 
         display: flex;
         justify-content: space-between;
         margin-bottom: 1em;
     }
-h2
-    {   
-       @include underlineEffect($colorStartMenu2, $colorEndMenu2);
-    }
+
 h2:hover 
     {
         background-size: 100% 100%;
@@ -103,17 +100,3 @@ span
         display: flex;
         justify-content: flex-end;
     }
-.signature 
-    {
-        font-size: x-large;
-        display: flex;
-        justify-content: center;
-        margin-top: 3em;
-        padding-bottom: 2em;
-    }
-.double-croche.sign
-    {
-        font-size: xx-large;
-        margin-right: 1em;
-    }
-    
