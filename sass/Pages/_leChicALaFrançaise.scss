@@ -36,19 +36,46 @@ h4
         {
             display: flex;
             align-items: center;
-            font: pink;
+        }
+    /*partie entrées*/
+        &__effect--lCALFentrees
+        {
+            color: $colorEntrees2;
         }
         &__effect--lCALFentrees::before, &__effect--lCALFentrees::after
         {
             @include effectCartelCALF($colorEntrees2);
         }
+        &__effect--lCALFentrees+ul
+        {
+            color: $colorEntrees2;
+        }
+    /*partie plats*/
+        &__effect--lCALFplats
+        {
+            color: $colorPlats2;
+        }
         &__effect--lCALFplats::before, &__effect--lCALFplats::after 
         {
             @include effectCartelCALF($colorPlats2);
         }
+        &__effect--lCALFplats+ul
+        {
+            color: $colorPlats2;
+        }
+    /*partie desserts*/
+        &__effect--lCALFdesserts
+        {
+            color: $colorDesserts2;
+        }
+
         &__effect--lCALFdesserts::before, &__effect--lCALFdesserts::after
         {
             @include effectCartelCALF($colorDesserts2);
+        }
+        &__effect--lCALFdesserts+ul
+        {
+            color: $colorDesserts2;
         }
     }
 ul

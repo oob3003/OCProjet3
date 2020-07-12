@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   background-color: #579c87;
   font-family: Berlin Sans FB;
@@ -388,11 +389,16 @@ h4 {
   margin: auto;
   max-width: 80%;
   padding-bottom: 4em;
+  /*partie entrées*/
+  /*partie plats*/
+  /*partie desserts*/
 }
 .carteMenulCALF__effect--lCALFentrees, .carteMenulCALF__effect--lCALFplats, .carteMenulCALF__effect--lCALFdesserts {
   display: flex;
   align-items: center;
-  font: pink;
+}
+.carteMenulCALF__effect--lCALFentrees {
+  color: #c67412;
 }
 .carteMenulCALF__effect--lCALFentrees::before, .carteMenulCALF__effect--lCALFentrees::after {
   content: "";
@@ -401,6 +407,12 @@ h4 {
   height: 4px;
   background-color: #c67412;
 }
+.carteMenulCALF__effect--lCALFentrees + ul {
+  color: #c67412;
+}
+.carteMenulCALF__effect--lCALFplats {
+  color: #a56799;
+}
 .carteMenulCALF__effect--lCALFplats::before, .carteMenulCALF__effect--lCALFplats::after {
   content: "";
   display: flex;
@@ -408,12 +420,21 @@ h4 {
   height: 4px;
   background-color: #a56799;
 }
+.carteMenulCALF__effect--lCALFplats + ul {
+  color: #a56799;
+}
+.carteMenulCALF__effect--lCALFdesserts {
+  color: #6e4ccc;
+}
 .carteMenulCALF__effect--lCALFdesserts::before, .carteMenulCALF__effect--lCALFdesserts::after {
   content: "";
   display: flex;
   width: 30%;
   height: 4px;
   background-color: #6e4ccc;
+}
+.carteMenulCALF__effect--lCALFdesserts + ul {
+  color: #6e4ccc;
 }
 
 ul {
