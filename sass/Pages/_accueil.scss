@@ -49,7 +49,7 @@ main
 .menus__menu1--zoom 
 {
     & h1, & p {
-    font-family: $fontFamilyAccueilMenu;}
+    font-family: $fontFamilyAccueilMenu1;}
 }
 .menus__menu1--zoom p{
     font-size: 2em;
@@ -70,7 +70,7 @@ main
     font-size: 2.5em;
 }
 .menus__menu3--zoom p {
-    font-family: $fontFamilyAccueilMenu;
+    font-family: $fontFamilyAccueilMenu1;
     font-size: 2em;
     color: $colorEndMenu3;
 }
@@ -81,7 +81,7 @@ main
     font-size: 1.9em;
 }
 .menus__menu4--zoom p {
-    font-family: $fontFamilyAccueilMenu;
+    font-family: $fontFamilyAccueilMenu1;
     font-size: 2em;
     color: $colorPolice4;
 }

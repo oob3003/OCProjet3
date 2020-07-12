@@ -6,17 +6,17 @@ h4
        justify-content: center;
        margin-bottom: 1em;
     }
-.cartelNE 
+.cartelCALF
     {
-        background-color: $colorFondMenu1;
-        font-family: $fontFamilyAccueilMenu1;
+        background-color: $colorFondMenu2;
+        font-family: $fontFamilyCarte2;
         margin-top: 2em;
         margin-right: 5em;
         margin-bottom: 14em;
         margin-left: 5em;
         @include boxing-shadow;
     }
-.laNoteEnchantee
+.leChicALaFrancaise
     {
         font-size: xx-large;
         display: flex;
@@ -24,24 +24,31 @@ h4
         text-align: center;
         padding-top: 3em;
         padding-bottom: 1.5em;
+        @include colorNameMenu($colorStartMenu2, $colorEndMenu2)
     }
-.carteMenulNE
+.carteMenulCALF
     {
         margin: auto;
         max-width: 80%;
-            
-    &__effect--lNE
+        padding-bottom: 4em;
+    
+        &__effect--lCALFentrees, &__effect--lCALFplats, &__effect--lCALFdesserts
         {
             display: flex;
             align-items: center;
+            font: pink;
         }
-    &__effect--lNE::after, &__effect--lNE::before
+        &__effect--lCALFentrees::before, &__effect--lCALFentrees::after
         {
-            content:"";
-            display: flex;
-            width: 30%;
-            height: 4px;
-            background-color: black;
+            @include effectCartelCALF($colorEntrees2);
+        }
+        &__effect--lCALFplats::before, &__effect--lCALFplats::after 
+        {
+            @include effectCartelCALF($colorPlats2);
+        }
+        &__effect--lCALFdesserts::before, &__effect--lCALFdesserts::after
+        {
+            @include effectCartelCALF($colorDesserts2);
         }
     }
 ul
@@ -57,7 +64,7 @@ li
     }
 h2
     {   
-       @include underlineEffect($colorStartMenu1, $colorEndMenu1);
+       @include underlineEffect($colorStartMenu2, $colorEndMenu2);
     }
 h2:hover 
     {
@@ -82,5 +89,4 @@ span
         font-size: xx-large;
         margin-right: 1em;
     }
-    
     

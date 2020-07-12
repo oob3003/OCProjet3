@@ -132,11 +132,11 @@ main {
 .double-croche {
   background: #f04a5e;
   /* Old browsers */
-  background: -moz-linear-gradient(top left, #f04a5e 0%, #f78f6a 100%);
+  background: -moz-linear-gradient(top left, #f04a5e 45%, #f78f6a 65%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top left, #f04a5e 0%, #f78f6a 100%);
+  background: -webkit-linear-gradient(top left, #f04a5e 45%, #f78f6a 65%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom right, #f04a5e 0%, #f78f6a 100%);
+  background: linear-gradient(to bottom right, #f04a5e 45%, #f78f6a 65%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
   /* IE6-9 */
@@ -153,13 +153,13 @@ main {
 }
 
 .menus__menu2--zoom h1 {
-  background: #d8852e;
+  background: #e38913;
   /* Old browsers */
-  background: -moz-linear-gradient(top left, #d8852e 0%, #905bfd 100%);
+  background: -moz-linear-gradient(top left, #e38913 45%, #8f5bfe 65%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top left, #d8852e 0%, #905bfd 100%);
+  background: -webkit-linear-gradient(top left, #e38913 45%, #8f5bfe 65%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom right, #d8852e 0%, #905bfd 100%);
+  background: linear-gradient(to bottom right, #e38913 45%, #8f5bfe 65%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
   /* IE6-9 */
@@ -178,11 +178,11 @@ main {
 .menus__menu3--zoom h1 {
   background: #0431df;
   /* Old browsers */
-  background: -moz-linear-gradient(top left, #0431df 0%, #0887fb 100%);
+  background: -moz-linear-gradient(top left, #0431df 45%, #0887fb 65%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top left, #0431df 0%, #0887fb 100%);
+  background: -webkit-linear-gradient(top left, #0431df 45%, #0887fb 65%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom right, #0431df 0%, #0887fb 100%);
+  background: linear-gradient(to bottom right, #0431df 45%, #0887fb 65%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
   /* IE6-9 */
@@ -201,11 +201,11 @@ main {
 .menus__menu4--zoom h1 {
   background: #42973c;
   /* Old browsers */
-  background: -moz-linear-gradient(top left, #42973c 0%, #bfff7e 100%);
+  background: -moz-linear-gradient(top left, #42973c 45%, #bfff7e 65%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top left, #42973c 0%, #bfff7e 100%);
+  background: -webkit-linear-gradient(top left, #42973c 45%, #bfff7e 65%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom right, #42973c 0%, #bfff7e 100%);
+  background: linear-gradient(to bottom right, #42973c 45%, #bfff7e 65%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
   /* IE6-9 */
@@ -267,7 +267,7 @@ h4 {
   margin-bottom: 1em;
 }
 
-.carte {
+.cartelNE {
   background-color: #fcdfdb;
   font-family: Lucida Handwriting;
   margin-top: 2em;
@@ -286,15 +286,15 @@ h4 {
   padding-bottom: 1.5em;
 }
 
-.carteMenu {
+.carteMenulNE {
   margin: auto;
   max-width: 80%;
 }
-.carteMenu__effect {
+.carteMenulNE__effect--lNE {
   display: flex;
   align-items: center;
 }
-.carteMenu__effect::after, .carteMenu__effect::before {
+.carteMenulNE__effect--lNE::after, .carteMenulNE__effect--lNE::before {
   content: "";
   display: flex;
   width: 30%;
@@ -316,6 +316,120 @@ li {
 h2 {
   font-size: x-large;
   background: linear-gradient(to top, #f04a5e 2px, #f78f6a 2px, transparent 10px) no-repeat;
+  background-size: 0% 100%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-size 400ms;
+  width: fit-content;
+}
+
+h2:hover {
+  background-size: 100% 100%;
+}
+
+span {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.signature {
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  padding-bottom: 2em;
+}
+
+.double-croche.sign {
+  font-size: xx-large;
+  margin-right: 1em;
+}
+
+h4 {
+  font-family: Calibri;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.cartelCALF {
+  background-color: #fff5fe;
+  font-family: Baskerville Old Face;
+  margin-top: 2em;
+  margin-right: 5em;
+  margin-bottom: 14em;
+  margin-left: 5em;
+  box-shadow: 0px 0px 20px #b6b6b6;
+}
+
+.leChicALaFrancaise {
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 1.5em;
+  background: #e38913;
+  /* Old browsers */
+  background: -moz-linear-gradient(top left, #e38913 45%, #8f5bfe 65%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top left, #e38913 45%, #8f5bfe 65%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom right, #e38913 45%, #8f5bfe 65%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
+  /* IE6-9 */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.carteMenulCALF {
+  margin: auto;
+  max-width: 80%;
+  padding-bottom: 4em;
+}
+.carteMenulCALF__effect--lCALFentrees, .carteMenulCALF__effect--lCALFplats, .carteMenulCALF__effect--lCALFdesserts {
+  display: flex;
+  align-items: center;
+  font: pink;
+}
+.carteMenulCALF__effect--lCALFentrees::before, .carteMenulCALF__effect--lCALFentrees::after {
+  content: "";
+  display: flex;
+  width: 30%;
+  height: 4px;
+  background-color: #c67412;
+}
+.carteMenulCALF__effect--lCALFplats::before, .carteMenulCALF__effect--lCALFplats::after {
+  content: "";
+  display: flex;
+  width: 30%;
+  height: 4px;
+  background-color: #a56799;
+}
+.carteMenulCALF__effect--lCALFdesserts::before, .carteMenulCALF__effect--lCALFdesserts::after {
+  content: "";
+  display: flex;
+  width: 30%;
+  height: 4px;
+  background-color: #6e4ccc;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 2.5em;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: x-large;
+  background: linear-gradient(to top, #e38913 2px, #8f5bfe 2px, transparent 10px) no-repeat;
   background-size: 0% 100%;
   margin-left: auto;
   margin-right: auto;
