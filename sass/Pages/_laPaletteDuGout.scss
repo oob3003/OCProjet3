@@ -1,0 +1,80 @@
+h4
+    {
+       font-family: Calibri;
+       font-size: 3em;
+       display: flex;
+       justify-content: center;
+       margin-bottom: 1em;
+    }
+.cartelPDG
+    {
+        background-color: $colorFondMenu4;
+        font-family: $fontFamilyCarte3;
+        margin-top: 2em;
+        margin-right: 5em;
+        margin-bottom: 14em;
+        margin-left: 5em;
+        padding-bottom: 8em;
+        @include boxing-shadow;
+    }
+.laPaletteDuGout
+    {
+        font-family: $fontFamilyCarte3;
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @include colorNameMenu($colorStartMenu4, $colorEndMenu4)
+    }
+.carteMenulPDG
+    {
+        &__effect--lPDG
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            margin: auto;
+        
+        & h2
+            {   
+                @include underlineEffect($colorStartMenu4, $colorEndMenu4);
+            }
+        }
+        &__effect--lPDG+ul
+        {
+            @include alineStyleText(black);
+        }
+        
+    /*partie entrées*/
+        &__effect--lPDG::before, &__effect--lPDG::after
+        {
+            @include effectCarte($colorEndMenu4);
+              
+        }
+    }
+  /*  mixin en tant que variable?!    &__effect--lPDGentrees::after
+        {
+            @include colorNameMenu($colorStartMenu4, $colorEndMenu4);
+        }
+    */     
+h2:hover 
+    {
+        background-size: 100% 100%;
+    }
+  
+span
+    {
+        display: flex;
+        justify-content: flex-end;
+    }
+/*position texte de la carte*/
+li
+    { 
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5em;
+        margin-bottom: 1em;
+        margin-left: 5em;
+    }
+    
