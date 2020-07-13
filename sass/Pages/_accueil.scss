@@ -48,13 +48,13 @@ main
 }
 .menus__menu1--zoom 
 {
-    & h1, & p {
+    & h2, & p {
     font-family: $fontFamilyAccueilMenu1;}
 }
 .menus__menu1--zoom p{
     font-size: 2em;
 }
-.menus__menu2--zoom h1 {
+.menus__menu2--zoom h2 {
     @include colorNameMenu($colorStartMenu2, $colorEndMenu2);
     font-family: Edwardian Script ITC;
     Font-size: 2.5em;
@@ -64,7 +64,7 @@ main
     font-weight: bold;
     font-size: 2em; 
 }
-.menus__menu3--zoom h1 {
+.menus__menu3--zoom h2 {
     @include colorNameMenu($colorStartMenu3, $colorEndMenu3);
     font-family: Brush Script MT;
     font-size: 2.5em;
@@ -74,7 +74,7 @@ main
     font-size: 2em;
     color: $colorEndMenu3;
 }
-.menus__menu4--zoom h1 {
+.menus__menu4--zoom h2 {
     @include colorNameMenu($colorStartMenu4, $colorEndMenu4);
     font-family: MV Boli;
     font-style: italic;

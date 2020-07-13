@@ -149,7 +149,7 @@ main {
   -webkit-background-clip: text;
 }
 
-.menus__menu1--zoom h1, .menus__menu1--zoom p {
+.menus__menu1--zoom h2, .menus__menu1--zoom p {
   font-family: Lucida Handwriting;
 }
 
@@ -157,7 +157,7 @@ main {
   font-size: 2em;
 }
 
-.menus__menu2--zoom h1 {
+.menus__menu2--zoom h2 {
   background: #e38913;
   /* Old browsers */
   background: -moz-linear-gradient(top left, #e38913 45%, #8f5bfe 65%);
@@ -180,7 +180,7 @@ main {
   font-size: 2em;
 }
 
-.menus__menu3--zoom h1 {
+.menus__menu3--zoom h2 {
   background: #0431df;
   /* Old browsers */
   background: -moz-linear-gradient(top left, #0431df 45%, #0887fb 65%);
@@ -203,7 +203,7 @@ main {
   color: #0887fb;
 }
 
-.menus__menu4--zoom h1 {
+.menus__menu4--zoom h2 {
   background: #42973c;
   /* Old browsers */
   background: -moz-linear-gradient(top left, #42973c 45%, #bfff7e 65%);
