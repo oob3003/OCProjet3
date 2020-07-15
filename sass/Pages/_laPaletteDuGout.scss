@@ -35,24 +35,29 @@ h4
             justify-content: center;
             width: 80%;
             margin: auto;
-        
+        }
         & h2
-            {   
-                @include underlineEffect($colorStartMenu4, $colorEndMenu4);
-            }
+        {   
+            @include underlineEffect($colorStartMenu4, $colorEndMenu4);
         }
         &__effect--lPDG+ul
         {
             @include alineStyleText(black);
         }
         
-    /*partie entrées*/
+        /*partie entrées*/
         &__effect--lPDG::before, &__effect--lPDG::after
         {
             @include effectCarte($colorEndMenu4);
               
         }
+        & li 
+        {
+            margin-left: 5em;
+            margin-right: 5em;
+        }
     }
+
   /*  mixin en tant que variable?!    &__effect--lPDGentrees::after
         {
             @include colorNameMenu($colorStartMenu4, $colorEndMenu4);
@@ -68,13 +73,5 @@ span
         display: flex;
         justify-content: flex-end;
     }
-/*position texte de la carte*/
-li
-    { 
-        display: flex;
-        justify-content: space-between;
-        margin-right: 5em;
-        margin-bottom: 1em;
-        margin-left: 5em;
-    }
+
     

@@ -315,16 +315,18 @@ h4 {
   transition: background-size 400ms;
   width: fit-content;
 }
-
-ul {
+.carteMenulNE ul {
   padding-left: 0;
+  margin-left: 0;
   margin-bottom: 2.5em;
 }
 
 li {
   display: flex;
   justify-content: space-between;
+  margin-right: 0;
   margin-bottom: 1em;
+  margin-left: 0;
 }
 
 h2:hover {
@@ -634,7 +636,7 @@ h4 {
   width: 80%;
   margin: auto;
 }
-.carteMenulPDG__effect--lPDG h2 {
+.carteMenulPDG h2 {
   font-size: x-large;
   background: linear-gradient(to top, #42973c 2px, #bfff7e 2px, transparent 10px) no-repeat;
   background-size: 0% 100%;
@@ -658,6 +660,10 @@ h4 {
   height: 4px;
   background-color: #bfff7e;
 }
+.carteMenulPDG li {
+  margin-left: 5em;
+  margin-right: 5em;
+}
 
 /*  mixin en tant que variable?!    &__effect--lPDGentrees::after
       {
@@ -671,15 +677,6 @@ h2:hover {
 span {
   display: flex;
   justify-content: flex-end;
-}
-
-/*position texte de la carte*/
-li {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 5em;
-  margin-bottom: 1em;
-  margin-left: 5em;
 }
 
 /*# sourceMappingURL=style.css.map */

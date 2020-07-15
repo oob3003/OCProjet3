@@ -47,17 +47,21 @@ h4
         {   
             @include underlineEffect($colorStartMenu1, $colorEndMenu1);
         }
+    & ul
+        {
+            padding-left: 0;
+            margin-left: 0;
+            margin-bottom: 2.5em;
+        }
     }
-ul
-    {
-        padding-left: 0;
-        margin-bottom: 2.5em;
-    }
+    
 li
     { 
         display: flex;
         justify-content: space-between;
+        margin-right: 0;
         margin-bottom: 1em;
+        margin-left: 0;
     }
 h2:hover 
     {
