@@ -264,6 +264,11 @@ main {
   animation-delay: 550ms;
 }
 
+@media (min-width: 280px) and (max-width: 480px) {
+  .btn {
+    width: 90%;
+  }
+}
 h4 {
   font-family: Calibri;
   font-size: 3em;
