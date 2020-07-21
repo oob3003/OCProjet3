@@ -43,6 +43,14 @@ main
             @include boxing-appearance($colorFondMenu4,green);
         }
     }
+@media (min-width: 280px) and (max-width: 480px){
+    .menus
+        {
+        grid-template-columns: 60vw;
+        grid-template-rows: 60vh 60vh 60vh 60vh;
+        }
+    
+}
 .double-croche {
     @include colorNameMenu($colorStartMenu1, $colorEndMenu1);  
 }
