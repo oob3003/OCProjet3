@@ -100,3 +100,31 @@ span
         display: flex;
         justify-content: flex-end;
     }
+@media (min-width: 280px) and (max-width: 480px) {
+    h4 
+        {
+            
+        }
+    .cartelCALF 
+        {
+            margin-top: 2em;
+            margin-right: 0.5em;
+            margin-bottom: 4em;
+            margin-left: 0.5em;
+        }
+    .carteMenulCALF
+        {
+            &__effect--lCALFentrees::before, &__effect--lCALFentrees::after, &__effect--lCALFplats::before, &__effect--lCALFplats::after, &__effect--lCALFdesserts::before, &__effect--lCALFdesserts::after
+                {
+                    width: 10%;
+                }
+            & h2
+                {   
+                    font-size: 20px;
+                }
+        }
+    li
+        {
+            flex-direction: column;
+        }
+}

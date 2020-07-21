@@ -387,7 +387,7 @@ span {
     margin-left: 0.5em;
   }
 
-  .carteMenulNE__effect--lNE::after, .carteMenulNE__effect--lNE::before {
+  .carteMenulNE__effect--lNE::before, .carteMenulNE__effect--lNE::after {
     width: 10%;
   }
   .carteMenulNE h2 {
@@ -542,6 +542,25 @@ span {
   justify-content: flex-end;
 }
 
+@media (min-width: 280px) and (max-width: 480px) {
+  .cartelCALF {
+    margin-top: 2em;
+    margin-right: 0.5em;
+    margin-bottom: 4em;
+    margin-left: 0.5em;
+  }
+
+  .carteMenulCALF__effect--lCALFentrees::before, .carteMenulCALF__effect--lCALFentrees::after, .carteMenulCALF__effect--lCALFplats::before, .carteMenulCALF__effect--lCALFplats::after, .carteMenulCALF__effect--lCALFdesserts::before, .carteMenulCALF__effect--lCALFdesserts::after {
+    width: 10%;
+  }
+  .carteMenulCALF h2 {
+    font-size: 20px;
+  }
+
+  li {
+    flex-direction: column;
+  }
+}
 h4 {
   font-family: Calibri;
   font-size: 3em;

@@ -96,7 +96,7 @@ span
         }
     .carteMenulNE
         {
-            &__effect--lNE::after, &__effect--lNE::before
+            &__effect--lNE::before, &__effect--lNE::after
                 {
                     width: 10%;
                 }
