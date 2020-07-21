@@ -86,5 +86,41 @@ span
         font-size: xx-large;
         margin-right: 1em;
     }
-    
-    
+@media (min-width: 280px) and (max-width: 480px) {
+    .cartelNE 
+        {
+            margin-top: 2em;
+            margin-right: 0.5em;
+            margin-bottom: 4em;
+            margin-left: 0.5em;
+        }
+    .carteMenulNE
+        {
+            &__effect--lNE::after, &__effect--lNE::before
+                {
+                    width: 10%;
+                }
+            & h2
+                {   
+                    font-size: 20px;
+                }
+        }
+    li
+        {
+            flex-direction: column;
+        }
+    .signature 
+        {
+            font-size: large;
+            width: 15em;
+            margin-top: 1.5em;
+            padding-bottom: 3em;
+        }
+    .double-croche.sign
+        {
+            font-size: x-large;
+            margin-right: 0.5em;
+            margin-bottom: 1.5em;
+            margin-left: 0;
+        }
+}

@@ -33,18 +33,6 @@ footer {
   display: flex;
 }
 
-@media (min-width: 280px) and (max-width: 480px) {
-  .nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav .nav__linkMentions {
-    margin-top: 0.5em;
-  }
-  .nav .nav__linkContact {
-    margin-bottom: 0.5em;
-  }
-}
 .nav {
   width: 100%;
   display: flex;
@@ -82,6 +70,17 @@ a {
   color: #fdcb46;
 }
 
+@media (min-width: 280px) and (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+  }
+  .nav .nav__linkMentions {
+    margin-top: 0.5em;
+  }
+  .nav .nav__linkContact {
+    margin-bottom: 0.5em;
+  }
+}
 body {
   margin: 0;
 }
@@ -380,6 +379,39 @@ span {
   margin-right: 1em;
 }
 
+@media (min-width: 280px) and (max-width: 480px) {
+  .cartelNE {
+    margin-top: 2em;
+    margin-right: 0.5em;
+    margin-bottom: 4em;
+    margin-left: 0.5em;
+  }
+
+  .carteMenulNE__effect--lNE::after, .carteMenulNE__effect--lNE::before {
+    width: 10%;
+  }
+  .carteMenulNE h2 {
+    font-size: 20px;
+  }
+
+  li {
+    flex-direction: column;
+  }
+
+  .signature {
+    font-size: large;
+    width: 15em;
+    margin-top: 1.5em;
+    padding-bottom: 3em;
+  }
+
+  .double-croche.sign {
+    font-size: x-large;
+    margin-right: 0.5em;
+    margin-bottom: 1.5em;
+    margin-left: 0;
+  }
+}
 h4 {
   font-family: Calibri;
   font-size: 3em;
