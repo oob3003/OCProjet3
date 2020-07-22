@@ -165,7 +165,7 @@ main {
 .double-croche {
   background: #f04a5e;
   /* Old browsers */
-  background: linear-gradient(top left, #f04a5e 45%, #f78f6a 65%);
+  background: linear-gradient(to top left, #f04a5e 45%, #f78f6a 65%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top left, #f04a5e 45%, #f78f6a 65%);
   /* Chrome10-25,Safari5.1-6 */
@@ -188,7 +188,7 @@ main {
 .menus__menu2--zoom h2 {
   background: #e38913;
   /* Old browsers */
-  background: linear-gradient(top left, #e38913 45%, #8f5bfe 65%);
+  background: linear-gradient(to top left, #e38913 45%, #8f5bfe 65%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top left, #e38913 45%, #8f5bfe 65%);
   /* Chrome10-25,Safari5.1-6 */
@@ -211,7 +211,7 @@ main {
 .menus__menu3--zoom h2 {
   background: #0431df;
   /* Old browsers */
-  background: linear-gradient(top left, #0431df 45%, #0887fb 65%);
+  background: linear-gradient(to top left, #0431df 45%, #0887fb 65%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top left, #0431df 45%, #0887fb 65%);
   /* Chrome10-25,Safari5.1-6 */
@@ -234,7 +234,7 @@ main {
 .menus__menu4--zoom h2 {
   background: #42973c;
   /* Old browsers */
-  background: linear-gradient(top left, #42973c 45%, #bfff7e 65%);
+  background: linear-gradient(to top left, #42973c 45%, #bfff7e 65%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top left, #42973c 45%, #bfff7e 65%);
   /* Chrome10-25,Safari5.1-6 */
@@ -539,7 +539,7 @@ h4 {
   padding-bottom: 1.5em;
   background: #e38913;
   /* Old browsers */
-  background: linear-gradient(top left, #e38913 45%, #8f5bfe 65%);
+  background: linear-gradient(to top left, #e38913 45%, #8f5bfe 65%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top left, #e38913 45%, #8f5bfe 65%);
   /* Chrome10-25,Safari5.1-6 */
@@ -700,7 +700,7 @@ h4 {
   padding-bottom: 1.5em;
   background: #0431df;
   /* Old browsers */
-  background: linear-gradient(top left, #0431df 45%, #0887fb 65%);
+  background: linear-gradient(to top left, #0431df 45%, #0887fb 65%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top left, #0431df 45%, #0887fb 65%);
   /* Chrome10-25,Safari5.1-6 */
@@ -833,7 +833,7 @@ h4 {
   text-align: center;
   background: #42973c;
   /* Old browsers */
-  background: linear-gradient(top left, #42973c 45%, #bfff7e 65%);
+  background: linear-gradient(to top left, #42973c 45%, #bfff7e 65%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top left, #42973c 45%, #bfff7e 65%);
   /* Chrome10-25,Safari5.1-6 */

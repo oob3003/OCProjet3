@@ -34,7 +34,7 @@
 @mixin colorNameMenu($startColor, $endColor) {
     background: $startColor;
     /* Old browsers */
-    background: linear-gradient(top left, $startColor 45%, $endColor 65%);
+    background: linear-gradient(to top left, $startColor 45%, $endColor 65%);
     /* FF3.6-15 */
     background: -webkit-linear-gradient(top left, $startColor 45%, $endColor 65%);
     /* Chrome10-25,Safari5.1-6 */
