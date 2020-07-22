@@ -86,8 +86,7 @@ main
     color: $colorPolice4;
 }
 /* Ecrans Mobiles */
-@media (min-width: 280px) and (max-width: 568px){
-    
+@media (min-width: 280px) and (max-width: 567px){
     .menus
         {
         grid-template-columns: 80vw;
@@ -119,7 +118,11 @@ main
         }
 }
 /* Ecrans Tablettes */
-@media (min-width: 569px) and (max-width: 1080px){
+@media (min-width: 568px) and (max-width: 1080px){
+    main
+    {
+        margin-bottom: 42vh;
+    }
     .menus
         {
             grid-template-columns: 80vw;

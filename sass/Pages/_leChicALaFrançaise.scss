@@ -101,7 +101,7 @@ span
         justify-content: flex-end;
     }
 /* Ecrans Mobiles */
-@media (min-width: 280px) and (max-width: 568px) {
+@media (min-width: 280px) and (max-width: 567px) {
     .leChicALaFrancaise
         {
             font-size: large;
@@ -130,7 +130,7 @@ span
         }
 }
 /* Ecrans Tablettes */
-@media (min-width: 569px) and (max-width: 1080px){
+@media (min-width: 568px) and (max-width: 1080px){
     .carteMenulCALF
         {
             &__effect--lCALFentrees::before, &__effect--lCALFentrees::after, &__effect--lCALFplats::before, &__effect--lCALFplats::after, &__effect--lCALFdesserts::before, &__effect--lCALFdesserts::after

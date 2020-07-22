@@ -252,7 +252,7 @@ main {
 }
 
 /* Ecrans Mobiles */
-@media (min-width: 280px) and (max-width: 568px) {
+@media (min-width: 280px) and (max-width: 567px) {
   .menus {
     grid-template-columns: 80vw;
     grid-template-rows: 70vh 70vh 70vh 70vh;
@@ -295,7 +295,11 @@ main {
   }
 }
 /* Ecrans Tablettes */
-@media (min-width: 569px) and (max-width: 1080px) {
+@media (min-width: 568px) and (max-width: 1080px) {
+  main {
+    margin-bottom: 42vh;
+  }
+
   .menus {
     grid-template-columns: 80vw;
     grid-template-rows: 70vh 70vh 70vh 70vh;
@@ -438,7 +442,7 @@ span {
 }
 
 /* Ecrans Mobiles */
-@media (min-width: 280px) and (max-width: 568px) {
+@media (min-width: 280px) and (max-width: 567px) {
   #fondDeCarte h4 {
     font-size: x-large;
   }
@@ -480,7 +484,7 @@ span {
   }
 }
 /* Ecrans Tablettes */
-@media (min-width: 569px) and (max-width: 1080px) {
+@media (min-width: 568px) and (max-width: 1080px) {
   .laNoteEnchantee {
     font-size: x-large;
   }
@@ -630,7 +634,7 @@ span {
 }
 
 /* Ecrans Mobiles */
-@media (min-width: 280px) and (max-width: 568px) {
+@media (min-width: 280px) and (max-width: 567px) {
   .leChicALaFrancaise {
     font-size: large;
   }
@@ -654,7 +658,7 @@ span {
   }
 }
 /* Ecrans Tablettes */
-@media (min-width: 569px) and (max-width: 1080px) {
+@media (min-width: 568px) and (max-width: 1080px) {
   .carteMenulCALF__effect--lCALFentrees::before, .carteMenulCALF__effect--lCALFentrees::after, .carteMenulCALF__effect--lCALFplats::before, .carteMenulCALF__effect--lCALFplats::after, .carteMenulCALF__effect--lCALFdesserts::before, .carteMenulCALF__effect--lCALFdesserts::after {
     width: 10%;
   }
@@ -765,7 +769,7 @@ span {
   justify-content: flex-end;
 }
 
-@media (min-width: 280px) and (max-width: 568px) {
+@media (min-width: 280px) and (max-width: 567px) {
   .leDeliceDesPapilles {
     font-size: large;
   }
@@ -788,7 +792,7 @@ span {
   }
 }
 /* Ecrans Tablettes */
-@media (min-width: 569px) and (max-width: 1080px) {
+@media (min-width: 568px) and (max-width: 1080px) {
   .carteMenulDDP__effect--lDDPentrees::before, .carteMenulDDP__effect--lDDPentrees::after, .carteMenulDDP__effect--lDDPplats::before, .carteMenulDDP__effect--lDDPplats::after, .carteMenulDDP__effect--lDDPdesserts::before, .carteMenulDDP__effect--lDDPdesserts::after {
     width: 10%;
   }
