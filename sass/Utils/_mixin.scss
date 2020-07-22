@@ -17,6 +17,14 @@
     opacity: 0.60;
     }
 }
+@mixin zoomEffectMax480px {
+    transform: scale(1);
+    transition: transform 600ms, opacity 1000ms;
+    &:hover {
+    transform: scale(1.2);
+    opacity: 0.60;
+    }
+}
 @mixin colorNameMenu($startColor, $endColor){
     background: $startColor; /* Old browsers */
     background: -moz-linear-gradient(top left, $startColor 45%, $endColor 65%); /* FF3.6-15 */

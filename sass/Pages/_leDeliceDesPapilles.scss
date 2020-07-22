@@ -78,4 +78,26 @@ span
         display: flex;
         justify-content: flex-end;
     }
-    
+@media (min-width: 280px) and (max-width: 480px) {
+    .cartelDDP 
+        {
+            margin-top: 2em;
+            margin-right: 0.5em;
+            margin-bottom: 10em;
+            margin-left: 0.5em;
+            
+        }
+        .carteMenulDDP
+        {
+            padding-bottom: 1em;
+
+            &__effect--lDDPentrees::before, &__effect--lDDPentrees::after, &__effect--lDDPplats::before, &__effect--lDDPplats::after, &__effect--lDDPdesserts::before, &__effect--lDDPdesserts::after
+                {
+                    width: 10%;
+                }
+            & h2
+                {   
+                    font-size: 20px;
+                }    
+        }
+}  

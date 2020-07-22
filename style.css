@@ -151,12 +151,6 @@ main {
   color: green;
 }
 
-@media (min-width: 280px) and (max-width: 480px) {
-  .menus {
-    grid-template-columns: 60vw;
-    grid-template-rows: 60vh 60vh 60vh 60vh;
-  }
-}
 .double-croche {
   background: #f04a5e;
   /* Old browsers */
@@ -250,6 +244,48 @@ main {
   color: #72bf56;
 }
 
+@media (min-width: 280px) and (max-width: 480px) {
+  .menus {
+    grid-template-columns: 80vw;
+    grid-template-rows: 60vh 60vh 60vh 60vh;
+  }
+
+  .menus__menu1--zoom {
+    transform: scale(1);
+    transition: transform 600ms, opacity 1000ms;
+  }
+  .menus__menu1--zoom:hover {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  .menus__menu1--zoom h2 {
+    font-size: 1em;
+  }
+
+  .menus__menu2--zoom, .menus__menu3--zoom {
+    transform: scale(1);
+    transition: transform 600ms, opacity 1000ms;
+  }
+  .menus__menu2--zoom:hover, .menus__menu3--zoom:hover {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  .menus__menu2--zoom h2, .menus__menu3--zoom h2 {
+    font-size: 1.8em;
+  }
+
+  .menus__menu4--zoom {
+    transform: scale(1);
+    transition: transform 600ms, opacity 1000ms;
+  }
+  .menus__menu4--zoom:hover {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  .menus__menu4--zoom h2 {
+    font-size: 1.4em;
+  }
+}
 .btn {
   background-color: #579c87;
   color: #fdcb46;
@@ -383,8 +419,9 @@ span {
   .cartelNE {
     margin-top: 2em;
     margin-right: 0.5em;
-    margin-bottom: 4em;
+    margin-bottom: 10em;
     margin-left: 0.5em;
+    max-height: 105em;
   }
 
   .carteMenulNE__effect--lNE::before, .carteMenulNE__effect--lNE::after {
@@ -546,7 +583,7 @@ span {
   .cartelCALF {
     margin-top: 2em;
     margin-right: 0.5em;
-    margin-bottom: 4em;
+    margin-bottom: 10em;
     margin-left: 0.5em;
   }
 
@@ -667,6 +704,24 @@ span {
   justify-content: flex-end;
 }
 
+@media (min-width: 280px) and (max-width: 480px) {
+  .cartelDDP {
+    margin-top: 2em;
+    margin-right: 0.5em;
+    margin-bottom: 10em;
+    margin-left: 0.5em;
+  }
+
+  .carteMenulDDP {
+    padding-bottom: 1em;
+  }
+  .carteMenulDDP__effect--lDDPentrees::before, .carteMenulDDP__effect--lDDPentrees::after, .carteMenulDDP__effect--lDDPplats::before, .carteMenulDDP__effect--lDDPplats::after, .carteMenulDDP__effect--lDDPdesserts::before, .carteMenulDDP__effect--lDDPdesserts::after {
+    width: 10%;
+  }
+  .carteMenulDDP h2 {
+    font-size: 20px;
+  }
+}
 h4 {
   font-family: Calibri;
   font-size: 3em;
@@ -757,6 +812,29 @@ h2:hover {
 span {
   display: flex;
   justify-content: flex-end;
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .cartelPDG {
+    margin-top: 2em;
+    margin-right: 0.5em;
+    margin-bottom: 10em;
+    margin-left: 0.5em;
+  }
+
+  .carteMenulPDG {
+    padding-bottom: 1em;
+  }
+  .carteMenulPDG__effect--lPDG::before, .carteMenulPDG__effect--lPDG::after {
+    width: 10%;
+  }
+  .carteMenulPDG h2 {
+    font-size: 20px;
+  }
+  .carteMenulPDG li {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

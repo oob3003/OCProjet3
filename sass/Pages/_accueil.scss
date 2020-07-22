@@ -42,15 +42,7 @@ main
         &__menu4--zoom {
             @include boxing-appearance($colorFondMenu4,green);
         }
-    }
-@media (min-width: 280px) and (max-width: 480px){
-    .menus
-        {
-        grid-template-columns: 60vw;
-        grid-template-rows: 60vh 60vh 60vh 60vh;
-        }
-    
-}
+    }  
 .double-croche {
     @include colorNameMenu($colorStartMenu1, $colorEndMenu1);  
 }
@@ -92,4 +84,36 @@ main
     font-family: $fontFamilyAccueilMenu1;
     font-size: 2em;
     color: $colorPolice4;
+}
+@media (min-width: 280px) and (max-width: 480px){
+    
+    .menus
+        {
+        grid-template-columns: 80vw;
+        grid-template-rows: 60vh 60vh 60vh 60vh;
+        }
+    .menus__menu1--zoom
+        {
+            @include zoomEffectMax480px;
+            h2
+                {
+                    font-size: 1em;
+                }
+        }
+    .menus__menu2--zoom, .menus__menu3--zoom
+        {
+            @include zoomEffectMax480px;
+            h2
+                {
+                    font-size: 1.8em;
+                }
+        }
+    .menus__menu4--zoom
+        {
+            @include zoomEffectMax480px;
+            h2
+                {
+                    font-size: 1.4em;
+                }
+        }
 }

@@ -73,5 +73,31 @@ span
         display: flex;
         justify-content: flex-end;
     }
-
+@media (min-width: 280px) and (max-width: 480px) {
+    .cartelPDG 
+        {
+            margin-top: 2em;
+            margin-right: 0.5em;
+            margin-bottom: 10em;
+            margin-left: 0.5em;            
+        }
+    .carteMenulPDG
+        {
+            padding-bottom: 1em;
+    
+            &__effect--lPDG::before, &__effect--lPDG::after, 
+                {
+                    width: 10%;
+                }
+            & h2
+                {   
+                    font-size: 20px;
+                } 
+            li 
+                {
+                    margin-left: 0;
+                    margin-right: 0;
+                }   
+        }
+}  
     
