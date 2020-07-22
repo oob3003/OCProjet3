@@ -119,7 +119,7 @@ main {
   transition: transform 600ms, opacity 1000ms;
 }
 .menus__menu1--zoom:hover, .menus__menu2--zoom:hover, .menus__menu3--zoom:hover, .menus__menu4--zoom:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   opacity: 0.6;
 }
 .menus__menu1 {
@@ -255,7 +255,7 @@ main {
 @media (min-width: 280px) and (max-width: 568px) {
   .menus {
     grid-template-columns: 80vw;
-    grid-template-rows: 60vh 60vh 60vh 60vh;
+    grid-template-rows: 70vh 70vh 70vh 70vh;
   }
 
   .menus__menu1--zoom {
@@ -263,7 +263,7 @@ main {
     transition: transform 600ms, opacity 1000ms;
   }
   .menus__menu1--zoom:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 0.6;
   }
   .menus__menu1--zoom h2 {
@@ -275,7 +275,7 @@ main {
     transition: transform 600ms, opacity 1000ms;
   }
   .menus__menu2--zoom:hover, .menus__menu3--zoom:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 0.6;
   }
   .menus__menu2--zoom h2, .menus__menu3--zoom h2 {
@@ -287,7 +287,7 @@ main {
     transition: transform 600ms, opacity 1000ms;
   }
   .menus__menu4--zoom:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 0.6;
   }
   .menus__menu4--zoom h2 {
@@ -298,7 +298,7 @@ main {
 @media (min-width: 569px) and (max-width: 1080px) {
   .menus {
     grid-template-columns: 80vw;
-    grid-template-rows: 50vh 50vh 50vh 50vh;
+    grid-template-rows: 70vh 70vh 70vh 70vh;
   }
 }
 .btn {
@@ -474,12 +474,22 @@ span {
 }
 /* Ecrans Tablettes */
 @media (min-width: 569px) and (max-width: 1080px) {
+  .laNoteEnchantee {
+    font-size: x-large;
+  }
+
   .carteMenulNE__effect--lNE::before, .carteMenulNE__effect--lNE::after {
     width: 10%;
   }
 
   li {
     flex-direction: column;
+  }
+
+  .signature {
+    font-size: medium;
+    margin-top: 1.5em;
+    padding-bottom: 3em;
   }
 }
 h4 {
@@ -612,6 +622,7 @@ span {
   justify-content: flex-end;
 }
 
+/* Ecrans Mobiles */
 @media (min-width: 280px) and (max-width: 568px) {
   .cartelCALF {
     margin-top: 2em;
@@ -629,6 +640,12 @@ span {
 
   li {
     flex-direction: column;
+  }
+}
+/* Ecrans Tablettes */
+@media (min-width: 569px) and (max-width: 1080px) {
+  .carteMenulCALF__effect--lCALFentrees::before, .carteMenulCALF__effect--lCALFentrees::after, .carteMenulCALF__effect--lCALFplats::before, .carteMenulCALF__effect--lCALFplats::after, .carteMenulCALF__effect--lCALFdesserts::before, .carteMenulCALF__effect--lCALFdesserts::after {
+    width: 10%;
   }
 }
 h4 {
@@ -738,6 +755,10 @@ span {
 }
 
 @media (min-width: 280px) and (max-width: 568px) {
+  .leDeliceDesPapilles {
+    font-size: large;
+  }
+
   .cartelDDP {
     margin-top: 2em;
     margin-right: 0.5em;
@@ -749,10 +770,16 @@ span {
     padding-bottom: 1em;
   }
   .carteMenulDDP__effect--lDDPentrees::before, .carteMenulDDP__effect--lDDPentrees::after, .carteMenulDDP__effect--lDDPplats::before, .carteMenulDDP__effect--lDDPplats::after, .carteMenulDDP__effect--lDDPdesserts::before, .carteMenulDDP__effect--lDDPdesserts::after {
-    width: 10%;
+    width: 5%;
   }
   .carteMenulDDP h2 {
     font-size: 20px;
+  }
+}
+/* Ecrans Tablettes */
+@media (min-width: 569px) and (max-width: 1080px) {
+  .carteMenulDDP__effect--lDDPentrees::before, .carteMenulDDP__effect--lDDPentrees::after, .carteMenulDDP__effect--lDDPplats::before, .carteMenulDDP__effect--lDDPplats::after, .carteMenulDDP__effect--lDDPdesserts::before, .carteMenulDDP__effect--lDDPdesserts::after {
+    width: 10%;
   }
 }
 h4 {
@@ -848,6 +875,10 @@ span {
 }
 
 @media (min-width: 280px) and (max-width: 568px) {
+  .laPaletteDuGout {
+    font-size: large;
+  }
+
   .cartelPDG {
     margin-top: 2em;
     margin-right: 0.5em;

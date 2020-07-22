@@ -91,11 +91,11 @@ main
     .menus
         {
         grid-template-columns: 80vw;
-        grid-template-rows: 60vh 60vh 60vh 60vh;
+        grid-template-rows: 70vh 70vh 70vh 70vh;
         }
     .menus__menu1--zoom
         {
-            @include zoomEffectMax480px;
+            @include zoomEffectMax568px;
             h2
                 {
                     font-size: 1em;
@@ -103,7 +103,7 @@ main
         }
     .menus__menu2--zoom, .menus__menu3--zoom
         {
-            @include zoomEffectMax480px;
+            @include zoomEffectMax568px;
             h2
                 {
                     font-size: 1.8em;
@@ -111,7 +111,7 @@ main
         }
     .menus__menu4--zoom
         {
-            @include zoomEffectMax480px;
+            @include zoomEffectMax568px;
             h2
                 {
                     font-size: 1.4em;
@@ -123,6 +123,6 @@ main
     .menus
         {
             grid-template-columns: 80vw;
-            grid-template-rows: 50vh 50vh 50vh 50vh;
+            grid-template-rows: 70vh 70vh 70vh 70vh;
         }
 }

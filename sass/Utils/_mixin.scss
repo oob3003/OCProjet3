@@ -13,15 +13,15 @@
     transform: scale(1);
     transition: transform 600ms, opacity 1000ms;
     &:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
     opacity: 0.60;
     }
 }
-@mixin zoomEffectMax480px {
+@mixin zoomEffectMax568px {
     transform: scale(1);
     transition: transform 600ms, opacity 1000ms;
     &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 0.60;
     }
 }
@@ -56,7 +56,7 @@
     height: 4px;
     background-color: $textColor;
 }
-@mixin alineStyleText($textColor) {
+@mixin alignStyleText($textColor) {
     color: $textColor;
     font-size: large;
     padding-left: 0;

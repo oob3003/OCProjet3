@@ -44,7 +44,7 @@ h4
         }
         &__effect--lDDPentrees+ul, &__effect--lDDPplats+ul, &__effect--lDDPdesserts+ul
         {
-            @include alineStyleText(black);
+            @include alignStyleText(black);
         }
     /*partie entrées*/
         &__effect--lDDPentrees::before, &__effect--lDDPentrees::after
@@ -79,6 +79,10 @@ span
         justify-content: flex-end;
     }
 @media (min-width: 280px) and (max-width: 568px) {
+    .leDeliceDesPapilles
+        {
+            font-size: large;
+        }
     .cartelDDP 
         {
             margin-top: 2em;
@@ -93,7 +97,7 @@ span
 
             &__effect--lDDPentrees::before, &__effect--lDDPentrees::after, &__effect--lDDPplats::before, &__effect--lDDPplats::after, &__effect--lDDPdesserts::before, &__effect--lDDPdesserts::after
                 {
-                    width: 10%;
+                    width: 5%;
                 }
             & h2
                 {   
@@ -101,3 +105,14 @@ span
                 }    
         }
 }  
+/* Ecrans Tablettes */
+@media (min-width: 569px) and (max-width: 1080px){
+
+    .carteMenulDDP
+        {
+            &__effect--lDDPentrees::before, &__effect--lDDPentrees::after, &__effect--lDDPplats::before, &__effect--lDDPplats::after, &__effect--lDDPdesserts::before, &__effect--lDDPdesserts::after
+                {
+                    width: 10%;
+                }
+            }
+}

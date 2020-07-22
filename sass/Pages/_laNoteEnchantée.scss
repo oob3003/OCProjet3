@@ -135,6 +135,10 @@ span
 }
 /* Ecrans Tablettes */
 @media (min-width: 569px) and (max-width: 1080px){
+    .laNoteEnchantee
+        {
+            font-size: x-large;
+        }
     .carteMenulNE
         {
             &__effect--lNE::before, &__effect--lNE::after
@@ -145,5 +149,11 @@ span
     li
         {
             flex-direction: column;
+        }
+    .signature 
+        {
+            font-size: medium;
+            margin-top: 1.5em;
+            padding-bottom: 3em;
         }
 }
