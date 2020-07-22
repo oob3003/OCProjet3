@@ -43,20 +43,25 @@ footer
         text-decoration: none;
         color: $colorPoliceJaune;
     }
-@media (min-width: 280px) and (max-width: 480px){
+@media (min-width: 280px) and (max-width: 568px){
+    footer
+        {
+            height: 100px;
+        }
     .nav
         {
             flex-direction: column;
+            font-size: smaller;
             
             .nav__linkMentions
                 {
-                    
-                    margin-top: 0.5em;        
+                    margin-top: 0.5em;
+                    margin-left: 0em;        
                 }
             .nav__linkContact
                 {
                     margin-bottom: 0.5em;
-
+                    margin-left: 1.5em;
                 }       
         }
 }

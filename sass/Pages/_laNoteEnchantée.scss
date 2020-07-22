@@ -86,20 +86,29 @@ span
         font-size: xx-large;
         margin-right: 1em;
     }
-@media (min-width: 280px) and (max-width: 480px) {
+/* Ecrans Mobiles */
+@media (min-width: 280px) and (max-width: 568px) {
+    #fondDeCarte h4
+        {
+            font-size: x-large;
+        }
+    .laNoteEnchantee
+        {
+            font-size: large;
+        }
     .cartelNE 
         {
             margin-top: 2em;
             margin-right: 0.5em;
             margin-bottom: 10em;
             margin-left: 0.5em;
-            max-height: 105em;
+            max-height: 115em;
         }
     .carteMenulNE
         {
             &__effect--lNE::before, &__effect--lNE::after
                 {
-                    width: 10%;
+                    width: 5%;
                 }
             & h2
                 {   
@@ -112,8 +121,7 @@ span
         }
     .signature 
         {
-            font-size: large;
-            width: 15em;
+            font-size: medium;
             margin-top: 1.5em;
             padding-bottom: 3em;
         }
@@ -123,5 +131,19 @@ span
             margin-right: 0.5em;
             margin-bottom: 1.5em;
             margin-left: 0;
+        }
+}
+/* Ecrans Tablettes */
+@media (min-width: 569px) and (max-width: 1080px){
+    .carteMenulNE
+        {
+            &__effect--lNE::before, &__effect--lNE::after
+                {
+                    width: 10%;
+                }
+            }
+    li
+        {
+            flex-direction: column;
         }
 }

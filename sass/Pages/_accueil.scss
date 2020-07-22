@@ -85,7 +85,8 @@ main
     font-size: 2em;
     color: $colorPolice4;
 }
-@media (min-width: 280px) and (max-width: 480px){
+/* Ecrans Mobiles */
+@media (min-width: 280px) and (max-width: 568px){
     
     .menus
         {
@@ -115,5 +116,13 @@ main
                 {
                     font-size: 1.4em;
                 }
+        }
+}
+/* Ecrans Tablettes */
+@media (min-width: 569px) and (max-width: 1080px){
+    .menus
+        {
+            grid-template-columns: 80vw;
+            grid-template-rows: 50vh 50vh 50vh 50vh;
         }
 }

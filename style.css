@@ -15,7 +15,7 @@ header {
   align-items: center;
 }
 
-@media (min-width: 280px) and (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 568px) {
   header {
     height: 80px;
     font-size: 1.5em;
@@ -70,15 +70,22 @@ a {
   color: #fdcb46;
 }
 
-@media (min-width: 280px) and (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 568px) {
+  footer {
+    height: 100px;
+  }
+
   .nav {
     flex-direction: column;
+    font-size: smaller;
   }
   .nav .nav__linkMentions {
     margin-top: 0.5em;
+    margin-left: 0em;
   }
   .nav .nav__linkContact {
     margin-bottom: 0.5em;
+    margin-left: 1.5em;
   }
 }
 body {
@@ -244,7 +251,8 @@ main {
   color: #72bf56;
 }
 
-@media (min-width: 280px) and (max-width: 480px) {
+/* Ecrans Mobiles */
+@media (min-width: 280px) and (max-width: 568px) {
   .menus {
     grid-template-columns: 80vw;
     grid-template-rows: 60vh 60vh 60vh 60vh;
@@ -286,6 +294,13 @@ main {
     font-size: 1.4em;
   }
 }
+/* Ecrans Tablettes */
+@media (min-width: 569px) and (max-width: 1080px) {
+  .menus {
+    grid-template-columns: 80vw;
+    grid-template-rows: 50vh 50vh 50vh 50vh;
+  }
+}
 .btn {
   background-color: #579c87;
   color: #fdcb46;
@@ -323,7 +338,7 @@ main {
   animation-delay: 550ms;
 }
 
-@media (min-width: 280px) and (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 568px) {
   .btn {
     width: 90%;
   }
@@ -415,17 +430,26 @@ span {
   margin-right: 1em;
 }
 
-@media (min-width: 280px) and (max-width: 480px) {
+/* Ecrans Mobiles */
+@media (min-width: 280px) and (max-width: 568px) {
+  #fondDeCarte h4 {
+    font-size: x-large;
+  }
+
+  .laNoteEnchantee {
+    font-size: large;
+  }
+
   .cartelNE {
     margin-top: 2em;
     margin-right: 0.5em;
     margin-bottom: 10em;
     margin-left: 0.5em;
-    max-height: 105em;
+    max-height: 115em;
   }
 
   .carteMenulNE__effect--lNE::before, .carteMenulNE__effect--lNE::after {
-    width: 10%;
+    width: 5%;
   }
   .carteMenulNE h2 {
     font-size: 20px;
@@ -436,8 +460,7 @@ span {
   }
 
   .signature {
-    font-size: large;
-    width: 15em;
+    font-size: medium;
     margin-top: 1.5em;
     padding-bottom: 3em;
   }
@@ -447,6 +470,16 @@ span {
     margin-right: 0.5em;
     margin-bottom: 1.5em;
     margin-left: 0;
+  }
+}
+/* Ecrans Tablettes */
+@media (min-width: 569px) and (max-width: 1080px) {
+  .carteMenulNE__effect--lNE::before, .carteMenulNE__effect--lNE::after {
+    width: 10%;
+  }
+
+  li {
+    flex-direction: column;
   }
 }
 h4 {
@@ -579,7 +612,7 @@ span {
   justify-content: flex-end;
 }
 
-@media (min-width: 280px) and (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 568px) {
   .cartelCALF {
     margin-top: 2em;
     margin-right: 0.5em;
@@ -704,7 +737,7 @@ span {
   justify-content: flex-end;
 }
 
-@media (min-width: 280px) and (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 568px) {
   .cartelDDP {
     margin-top: 2em;
     margin-right: 0.5em;
@@ -814,7 +847,7 @@ span {
   justify-content: flex-end;
 }
 
-@media (min-width: 280px) and (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 568px) {
   .cartelPDG {
     margin-top: 2em;
     margin-right: 0.5em;
