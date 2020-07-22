@@ -338,9 +338,16 @@ main {
   animation-delay: 550ms;
 }
 
+/* Ecrans Mobiles */
 @media (min-width: 280px) and (max-width: 568px) {
   .btn {
     width: 90%;
+  }
+}
+/* Ecran Tablettes */
+@media (min-width: 569px) and (max-width: 1080px) {
+  .btn {
+    width: 65%;
   }
 }
 h4 {
