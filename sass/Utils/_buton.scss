@@ -10,32 +10,46 @@
     border-radius: 9px;
     margin-top: 10vh;
 }
-.btn__point1, .btn__point2, .btn__point3 {
+
+.btn__point1,
+.btn__point2,
+.btn__point3 {
     position: relative;
     animation: bounce 900ms ease infinite;
 }
-@keyframes bounce{
-    from {bottom: 0px;}
-    50%  {bottom: 5px;}
-    to   {bottom: 0px;}
+
+@keyframes bounce {
+    from {
+        bottom: 0px;
+    }
+
+    50% {
+        bottom: 5px;
+    }
+
+    to {
+        bottom: 0px;
+    }
 }
+
 .btn__point2 {
     animation-delay: 300ms;
 }
+
 .btn__point3 {
     animation-delay: 550ms;
 }
+
 /* Ecrans Mobiles */
-@media (min-width: 280px) and (max-width: 568px){
-    .btn 
-        {
-            width: 90%;
-        }
+@media (min-width: 280px) and (max-width: 568px) {
+    .btn {
+        width: 90%;
+    }
 }
+
 /* Ecran Tablettes */
-@media (min-width: 569px) and (max-width: 1080px){
-    .btn 
-        {
-            width: 65%;
-        }
+@media (min-width: 569px) and (max-width: 1080px) {
+    .btn {
+        width: 65%;
+    }
 }

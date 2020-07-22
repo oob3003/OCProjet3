@@ -1,45 +1,60 @@
 @mixin boxing-shadow {
-    box-shadow: 0px 0px 20px #b6b6b6; 
+    box-shadow: 0px 0px 20px #b6b6b6;
 }
-@mixin boxing-appearance($colour, $fontcolor){
+
+@mixin boxing-appearance($colour, $fontcolor) {
     height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    color: $fontcolor;  
+    color: $fontcolor;
 }
+
 @mixin zoomEffect {
     transform: scale(1);
     transition: transform 600ms, opacity 1000ms;
+
     &:hover {
-    transform: scale(1.2);
-    opacity: 0.60;
+        transform: scale(1.2);
+        opacity: 0.60;
     }
 }
+
 @mixin zoomEffectMax568px {
     transform: scale(1);
     transition: transform 600ms, opacity 1000ms;
+
     &:hover {
-    transform: scale(1.1);
-    opacity: 0.60;
+        transform: scale(1.1);
+        opacity: 0.60;
     }
 }
-@mixin colorNameMenu($startColor, $endColor){
-    background: $startColor; /* Old browsers */
-    background: linear-gradient(top left, $startColor 45%, $endColor 65%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top left, $startColor 45%, $endColor 65%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom right, $startColor 45%, $endColor 65%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$startColor', endColorstr='$endColor',GradientType=1 ); /* IE6-9 */;
+
+@mixin colorNameMenu($startColor, $endColor) {
+    background: $startColor;
+    /* Old browsers */
+    background: linear-gradient(top left, $startColor 45%, $endColor 65%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top left, $startColor 45%, $endColor 65%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom right, $startColor 45%, $endColor 65%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$startColor', endColorstr='$endColor', GradientType=1);
+    /* IE6-9 */
+    ;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+
 @mixin previewEffect {
     transition: opacity 600ms;
+
     &:hover {
         opacity: 0.60;
     }
 }
+
 @mixin underlineEffect($baseColor, $effectColor) {
     font-size: x-large;
     background: linear-gradient(to top, $baseColor 2px, $effectColor 2px, transparent 10px) no-repeat;
@@ -49,13 +64,15 @@
     transition: background-size 400ms;
     width: fit-content;
 }
-@mixin effectCarte($textColor)  {
-    content:"";
+
+@mixin effectCarte($textColor) {
+    content: "";
     display: flex;
     width: 30%;
     height: 4px;
     background-color: $textColor;
 }
+
 @mixin alignStyleText($textColor) {
     color: $textColor;
     font-size: large;
@@ -64,5 +81,3 @@
     margin-bottom: 2.5em;
     margin-left: 10%;
 }
-
-

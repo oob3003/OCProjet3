@@ -1,112 +1,109 @@
-h4
-    {
-       font-family: Calibri;
-       font-size: 3em;
-       display: flex;
-       justify-content: center;
-       margin-bottom: 1em;
+h4 {
+    font-family: Calibri;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.cartelPDG {
+    background-color: $colorFondMenu4;
+    font-family: $fontFamilyCarte3;
+    margin-top: 2em;
+    margin-right: 5em;
+    margin-bottom: 14em;
+    margin-left: 5em;
+    padding-bottom: 8em;
+    @include boxing-shadow;
+}
+
+.laPaletteDuGout {
+    font-family: $fontFamilyCarte3;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @include colorNameMenu($colorStartMenu4, $colorEndMenu4)
+}
+
+.carteMenulPDG {
+    &__effect--lPDG {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
     }
-.cartelPDG
-    {
-        background-color: $colorFondMenu4;
-        font-family: $fontFamilyCarte3;
-        margin-top: 2em;
-        margin-right: 5em;
-        margin-bottom: 14em;
+
+    & h2 {
+        @include underlineEffect($colorStartMenu4, $colorEndMenu4);
+    }
+
+    &__effect--lPDG+ul {
+        @include alignStyleText(black);
+    }
+
+    /*partie entrées*/
+    &__effect--lPDG::before,
+    &__effect--lPDG::after {
+        @include effectCarte($colorEndMenu4);
+
+    }
+
+    li {
         margin-left: 5em;
-        padding-bottom: 8em;
-        @include boxing-shadow;
+        margin-right: 5em;
     }
-.laPaletteDuGout
-    {
-        font-family: $fontFamilyCarte3;
-        font-size: 50px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        @include colorNameMenu($colorStartMenu4, $colorEndMenu4)
-    }
-.carteMenulPDG
-    {
-        &__effect--lPDG
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 80%;
-            margin: auto;
-        }
-        & h2
-        {   
-            @include underlineEffect($colorStartMenu4, $colorEndMenu4);
-        }
-        &__effect--lPDG+ul
-        {
-            @include alignStyleText(black);
-        }
-        
-        /*partie entrées*/
-        &__effect--lPDG::before, &__effect--lPDG::after
-        {
-            @include effectCarte($colorEndMenu4);
-              
-        }
-        li 
-        {
-            margin-left: 5em;
-            margin-right: 5em;
-        }
-    }
-h2:hover 
-    {
-        background-size: 100% 100%;
-    }
-  
-span
-    {
-        display: flex;
-        justify-content: flex-end;
-    }
+}
+
+h2:hover {
+    background-size: 100% 100%;
+}
+
+span {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* Ecrans Mobiles */
 @media (min-width: 280px) and (max-width: 568px) {
-    .laPaletteDuGout
-        {
-            font-size: large;
+    .laPaletteDuGout {
+        font-size: large;
+    }
+
+    .cartelPDG {
+        margin-top: 2em;
+        margin-right: 0.5em;
+        margin-bottom: 10em;
+        margin-left: 0.5em;
+    }
+
+    .carteMenulPDG {
+        padding-bottom: 1em;
+
+        &__effect--lPDG::before,
+        &__effect--lPDG::after {
+            width: 10%;
         }
-    .cartelPDG 
-        {
-            margin-top: 2em;
-            margin-right: 0.5em;
-            margin-bottom: 10em;
-            margin-left: 0.5em;            
+
+        & h2 {
+            font-size: 20px;
         }
-    .carteMenulPDG
-        {
-            padding-bottom: 1em;
-    
-            &__effect--lPDG::before, &__effect--lPDG::after 
-                {
-                    width: 10%;
-                }
-            & h2
-                {   
-                    font-size: 20px;
-                } 
-            li 
-                {
-                    margin-left: 0;
-                    margin-right: 0;
-                }   
+
+        li {
+            margin-left: 0;
+            margin-right: 0;
         }
+    }
 }
+
 /* Ecrans Tablettes */
-@media (min-width: 568px) and (max-width: 1080px){
-    .carteMenulPDG
-        {
-            &__effect--lPDG::before, &__effect--lPDG::after
-                {
-                    width: 10%;
-                }
+@media (min-width: 568px) and (max-width: 1080px) {
+    .carteMenulPDG {
+
+        &__effect--lPDG::before,
+        &__effect--lPDG::after {
+            width: 10%;
         }
-    }  
-    
+    }
+}

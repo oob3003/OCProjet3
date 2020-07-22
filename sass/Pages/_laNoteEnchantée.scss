@@ -1,159 +1,158 @@
-h4
-    {
-       font-family: Calibri;
-       font-size: 3em;
-       display: flex;
-       justify-content: center;
-       margin-bottom: 1em;
-    }
-.cartelNE 
-    {
-        background-color: $colorFondMenu1;
-        font-family: $fontFamilyAccueilMenu1;
-        margin-top: 2em;
-        margin-right: 5em;
-        margin-bottom: 14em;
-        margin-left: 5em;
-        @include boxing-shadow;
-    }
-.laNoteEnchantee
-    {
-        font-size: xx-large;
+h4 {
+    font-family: Calibri;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.cartelNE {
+    background-color: $colorFondMenu1;
+    font-family: $fontFamilyAccueilMenu1;
+    margin-top: 2em;
+    margin-right: 5em;
+    margin-bottom: 14em;
+    margin-left: 5em;
+    @include boxing-shadow;
+}
+
+.laNoteEnchantee {
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 1.5em;
+}
+
+.carteMenulNE {
+    margin: auto;
+    max-width: 80%;
+
+    &__effect--lNE {
         display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-top: 3em;
-        padding-bottom: 1.5em;
+        align-items: center;
     }
-.carteMenulNE
-    {
-        margin: auto;
-        max-width: 80%;
-            
-    &__effect--lNE
-        {
-            display: flex;
-            align-items: center;
-        }
-    &__effect--lNE::after, &__effect--lNE::before
-        {
-            content:"";
-            display: flex;
-            width: 30%;
-            height: 4px;
-            background-color: black;
-        }
-    & h2
-        {   
-            @include underlineEffect($colorStartMenu1, $colorEndMenu1);
-        }
-    & ul
-        {
-            padding-left: 0;
-            margin-left: 0;
-            margin-bottom: 2.5em;
-        }
-    }
-    
-li
-    { 
+
+    &__effect--lNE::after,
+    &__effect--lNE::before {
+        content: "";
         display: flex;
-        justify-content: space-between;
-        margin-right: 0;
-        margin-bottom: 1em;
+        width: 30%;
+        height: 4px;
+        background-color: black;
+    }
+
+    & h2 {
+        @include underlineEffect($colorStartMenu1, $colorEndMenu1);
+    }
+
+    & ul {
+        padding-left: 0;
         margin-left: 0;
+        margin-bottom: 2.5em;
     }
-h2:hover 
-    {
-        background-size: 100% 100%;
-    }
-  
-span
-    {
-        display: flex;
-        justify-content: flex-end;
-    }
-.signature 
-    {
-        font-size: x-large;
-        display: flex;
-        justify-content: center;
-        margin-top: 3em;
-        padding-bottom: 2em;
-    }
-.double-croche.sign
-    {
-        font-size: xx-large;
-        margin-right: 1em;
-    }
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+    margin-bottom: 1em;
+    margin-left: 0;
+}
+
+h2:hover {
+    background-size: 100% 100%;
+}
+
+span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.signature {
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    padding-bottom: 2em;
+}
+
+.double-croche.sign {
+    font-size: xx-large;
+    margin-right: 1em;
+}
+
 /* Ecrans Mobiles */
 @media (min-width: 280px) and (max-width: 567px) {
-    #fondDeCarte h4
-        {
-            font-size: x-large;
+    #fondDeCarte h4 {
+        font-size: x-large;
+    }
+
+    .laNoteEnchantee {
+        font-size: large;
+    }
+
+    .cartelNE {
+        margin-top: 2em;
+        margin-right: 0.5em;
+        margin-bottom: 10em;
+        margin-left: 0.5em;
+        max-height: 115em;
+    }
+
+    .carteMenulNE {
+
+        &__effect--lNE::before,
+        &__effect--lNE::after {
+            width: 5%;
         }
-    .laNoteEnchantee
-        {
-            font-size: large;
+
+        & h2 {
+            font-size: 20px;
         }
-    .cartelNE 
-        {
-            margin-top: 2em;
-            margin-right: 0.5em;
-            margin-bottom: 10em;
-            margin-left: 0.5em;
-            max-height: 115em;
-        }
-    .carteMenulNE
-        {
-            &__effect--lNE::before, &__effect--lNE::after
-                {
-                    width: 5%;
-                }
-            & h2
-                {   
-                    font-size: 20px;
-                }
-        }
-    li
-        {
-            flex-direction: column;
-        }
-    .signature 
-        {
-            font-size: medium;
-            margin-top: 1.5em;
-            padding-bottom: 3em;
-        }
-    .double-croche.sign
-        {
-            font-size: x-large;
-            margin-right: 0.5em;
-            margin-bottom: 1.5em;
-            margin-left: 0;
-        }
+    }
+
+    li {
+        flex-direction: column;
+    }
+
+    .signature {
+        font-size: medium;
+        margin-top: 1.5em;
+        padding-bottom: 3em;
+    }
+
+    .double-croche.sign {
+        font-size: x-large;
+        margin-right: 0.5em;
+        margin-bottom: 1.5em;
+        margin-left: 0;
+    }
 }
+
 /* Ecrans Tablettes */
-@media (min-width: 568px) and (max-width: 1080px){
-    .laNoteEnchantee
-        {
-            font-size: x-large;
+@media (min-width: 568px) and (max-width: 1080px) {
+    .laNoteEnchantee {
+        font-size: x-large;
+    }
+
+    .carteMenulNE {
+
+        &__effect--lNE::before,
+        &__effect--lNE::after {
+            width: 10%;
         }
-    .carteMenulNE
-        {
-            &__effect--lNE::before, &__effect--lNE::after
-                {
-                    width: 10%;
-                }
-            }
-    li
-        {
-            flex-direction: column;
-        }
-    .signature 
-        {
-            font-size: medium;
-            margin-top: 1.5em;
-            padding-bottom: 3em;
-        }
+    }
+
+    li {
+        flex-direction: column;
+    }
+
+    .signature {
+        font-size: medium;
+        margin-top: 1.5em;
+        padding-bottom: 3em;
+    }
 }

@@ -1,141 +1,150 @@
-h4
-    {
-       font-family: Calibri;
-       font-size: 3em;
-       display: flex;
-       justify-content: center;
-       margin-bottom: 1em;
-    }
-.cartelCALF
-    {
-        background-color: $colorFondMenu2;
-        font-family: $fontFamilyCarte2;
-        margin-top: 2em;
-        margin-right: 5em;
-        margin-bottom: 14em;
-        margin-left: 5em;
-        @include boxing-shadow;
-    }
-.leChicALaFrancaise
-    {
-        font-size: xx-large;
+h4 {
+    font-family: Calibri;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.cartelCALF {
+    background-color: $colorFondMenu2;
+    font-family: $fontFamilyCarte2;
+    margin-top: 2em;
+    margin-right: 5em;
+    margin-bottom: 14em;
+    margin-left: 5em;
+    @include boxing-shadow;
+}
+
+.leChicALaFrancaise {
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 1.5em;
+    @include colorNameMenu($colorStartMenu2, $colorEndMenu2)
+}
+
+.carteMenulCALF {
+    margin: auto;
+    max-width: 80%;
+    padding-bottom: 4em;
+
+    &__effect--lCALFentrees,
+    &__effect--lCALFplats,
+    &__effect--lCALFdesserts {
         display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-top: 3em;
-        padding-bottom: 1.5em;
-        @include colorNameMenu($colorStartMenu2, $colorEndMenu2)
+        align-items: center;
     }
-.carteMenulCALF
-    {
-        margin: auto;
-        max-width: 80%;
-        padding-bottom: 4em;
-    
-        &__effect--lCALFentrees, &__effect--lCALFplats, &__effect--lCALFdesserts
-        {
-            display: flex;
-            align-items: center;    
-        }
-        & h2
-        {   
-            @include underlineEffect($colorStartMenu2, $colorEndMenu2);
-        }
+
+    & h2 {
+        @include underlineEffect($colorStartMenu2, $colorEndMenu2);
+    }
+
     /*partie entrées*/
-        &__effect--lCALFentrees
-        {
-            color: $colorEntrees2;
-        }
-        &__effect--lCALFentrees::before, &__effect--lCALFentrees::after
-        {
-            @include effectCarte($colorEntrees2);
-        }
-        &__effect--lCALFentrees+ul
-        {
-            @include alignStyleText($colorEntrees2);
-        }
+    &__effect--lCALFentrees {
+        color: $colorEntrees2;
+    }
+
+    &__effect--lCALFentrees::before,
+    &__effect--lCALFentrees::after {
+        @include effectCarte($colorEntrees2);
+    }
+
+    &__effect--lCALFentrees+ul {
+        @include alignStyleText($colorEntrees2);
+    }
+
     /*partie plats*/
-        &__effect--lCALFplats
-        {
-            color: $colorPlats2;
-        }
-        &__effect--lCALFplats::before, &__effect--lCALFplats::after 
-        {
-            @include effectCarte($colorPlats2);
-        }
-        &__effect--lCALFplats+ul
-        {
-            @include alignStyleText($colorPlats2);
-        }
+    &__effect--lCALFplats {
+        color: $colorPlats2;
+    }
+
+    &__effect--lCALFplats::before,
+    &__effect--lCALFplats::after {
+        @include effectCarte($colorPlats2);
+    }
+
+    &__effect--lCALFplats+ul {
+        @include alignStyleText($colorPlats2);
+    }
+
     /*partie desserts*/
-        &__effect--lCALFdesserts
-        {
-            color: $colorDesserts2;
-        }
-
-        &__effect--lCALFdesserts::before, &__effect--lCALFdesserts::after
-        {
-            @include effectCarte($colorDesserts2);
-        }
-        &__effect--lCALFdesserts+ul
-        {
-            @include alignStyleText($colorDesserts2);
-        }
+    &__effect--lCALFdesserts {
+        color: $colorDesserts2;
     }
 
-li
-    { 
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 1em;
+    &__effect--lCALFdesserts::before,
+    &__effect--lCALFdesserts::after {
+        @include effectCarte($colorDesserts2);
     }
 
-h2:hover 
-    {
-        background-size: 100% 100%;
+    &__effect--lCALFdesserts+ul {
+        @include alignStyleText($colorDesserts2);
     }
-  
-span
-    {
-        display: flex;
-        justify-content: flex-end;
-    }
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+h2:hover {
+    background-size: 100% 100%;
+}
+
+span {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* Ecrans Mobiles */
 @media (min-width: 280px) and (max-width: 567px) {
-    .leChicALaFrancaise
-        {
-            font-size: large;
+    .leChicALaFrancaise {
+        font-size: large;
+    }
+
+    .cartelCALF {
+        margin-top: 2em;
+        margin-right: 0.5em;
+        margin-bottom: 10em;
+        margin-left: 0.5em;
+    }
+
+    .carteMenulCALF {
+
+        &__effect--lCALFentrees::before,
+        &__effect--lCALFentrees::after,
+        &__effect--lCALFplats::before,
+        &__effect--lCALFplats::after,
+        &__effect--lCALFdesserts::before,
+        &__effect--lCALFdesserts::after {
+            width: 5%;
         }
-    .cartelCALF 
-        {
-            margin-top: 2em;
-            margin-right: 0.5em;
-            margin-bottom: 10em;
-            margin-left: 0.5em;
+
+        & h2 {
+            font-size: 20px;
         }
-    .carteMenulCALF
-        {
-            &__effect--lCALFentrees::before, &__effect--lCALFentrees::after, &__effect--lCALFplats::before, &__effect--lCALFplats::after, &__effect--lCALFdesserts::before, &__effect--lCALFdesserts::after
-                {
-                    width: 5%;
-                }
-            & h2
-                {   
-                    font-size: 20px;
-                }
-        }
-    li
-        {
-            flex-direction: column;
-        }
+    }
+
+    li {
+        flex-direction: column;
+    }
 }
+
 /* Ecrans Tablettes */
-@media (min-width: 568px) and (max-width: 1080px){
-    .carteMenulCALF
-        {
-            &__effect--lCALFentrees::before, &__effect--lCALFentrees::after, &__effect--lCALFplats::before, &__effect--lCALFplats::after, &__effect--lCALFdesserts::before, &__effect--lCALFdesserts::after
-                {
-                    width: 10%;
-                }
+@media (min-width: 568px) and (max-width: 1080px) {
+    .carteMenulCALF {
+
+        &__effect--lCALFentrees::before,
+        &__effect--lCALFentrees::after,
+        &__effect--lCALFplats::before,
+        &__effect--lCALFplats::after,
+        &__effect--lCALFdesserts::before,
+        &__effect--lCALFdesserts::after {
+            width: 10%;
         }
+    }
 }

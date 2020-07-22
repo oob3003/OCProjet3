@@ -1,133 +1,154 @@
-body
-    {
-        margin: 0;
-    }
-main 
-    {
+body {
+    margin: 0;
+}
+
+main {
+    height: 100%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-top: 10vh;
+    margin-bottom: 28vh;
+    margin-left: auto;
+}
+
+.menus {
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 33vw 33vw;
+    grid-template-rows: 60vh 60vh;
+    grid-column-gap: 6vw;
+    grid-row-gap: 11vh;
+
+    &__menu1,
+    &__menu2,
+    &__menu3,
+    &__menu4 {
+        @include boxing-shadow;
         height: 100%;
-        max-width: 1500px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-right: auto;
-        margin-top: 10vh;
-        margin-bottom: 28vh;
-        margin-left: auto;
+
+        &--zoom {
+            @include zoomEffect;
+        }
     }
-.menus
-    {   
-        background: #ffffff;
-        display: grid;
-        grid-template-columns: 33vw 33vw;
-        grid-template-rows: 100vh 100vh;
-        grid-column-gap: 6vw;
-        grid-row-gap: 11vh;
-        &__menu1, &__menu2, &__menu3, &__menu4 {
-            @include boxing-shadow;
-            height: 100%;
-            &--zoom {
-                @include zoomEffect;
-            }
-        }
-        &__menu1 {
-            background-color: $colorFondMenu1;
-        }
-        &__menu1--zoom {
-            @include boxing-appearance($colorFondMenu1, black);
-        }
-        &__menu2--zoom {
-            @include boxing-appearance($colorFondMenu2, #c77412);
-        }
-        &__menu3--zoom {
-            @include boxing-appearance($colorFondMenu3,yellow);  
-        }
-        &__menu4--zoom {
-            @include boxing-appearance($colorFondMenu4,green);
-        }
-    }  
+
+    &__menu1 {
+        background-color: $colorFondMenu1;
+    }
+
+    &__menu1--zoom {
+        @include boxing-appearance($colorFondMenu1, black);
+    }
+
+    &__menu2--zoom {
+        @include boxing-appearance($colorFondMenu2, #c77412);
+    }
+
+    &__menu3--zoom {
+        @include boxing-appearance($colorFondMenu3, yellow);
+    }
+
+    &__menu4--zoom {
+        @include boxing-appearance($colorFondMenu4, green);
+    }
+}
+
 .double-croche {
-    @include colorNameMenu($colorStartMenu1, $colorEndMenu1);  
+    @include colorNameMenu($colorStartMenu1, $colorEndMenu1);
 }
-.menus__menu1--zoom 
-{
-    & h2, & p {
-    font-family: $fontFamilyAccueilMenu1;}
+
+.menus__menu1--zoom {
+
+    & h2,
+    & p {
+        font-family: $fontFamilyAccueilMenu1;
+    }
 }
-.menus__menu1--zoom p{
+
+.menus__menu1--zoom p {
     font-size: 2em;
 }
+
 .menus__menu2--zoom h2 {
     @include colorNameMenu($colorStartMenu2, $colorEndMenu2);
     font-family: Edwardian Script ITC;
     Font-size: 2.5em;
 }
+
 .menus__menu2--zoom p {
     font-family: Dante;
     font-weight: bold;
-    font-size: 2em; 
+    font-size: 2em;
 }
+
 .menus__menu3--zoom h2 {
     @include colorNameMenu($colorStartMenu3, $colorEndMenu3);
     font-family: Brush Script MT;
     font-size: 2.5em;
 }
+
 .menus__menu3--zoom p {
     font-family: $fontFamilyAccueilMenu1;
     font-size: 2em;
     color: $colorEndMenu3;
 }
+
 .menus__menu4--zoom h2 {
     @include colorNameMenu($colorStartMenu4, $colorEndMenu4);
     font-family: MV Boli;
     font-style: italic;
     font-size: 1.9em;
 }
+
 .menus__menu4--zoom p {
     font-family: $fontFamilyAccueilMenu1;
     font-size: 2em;
     color: $colorPolice4;
 }
+
 /* Ecrans Mobiles */
-@media (min-width: 280px) and (max-width: 567px){
-    .menus
-        {
+@media (min-width: 280px) and (max-width: 567px) {
+    .menus {
         grid-template-columns: 80vw;
         grid-template-rows: 70vh 70vh 70vh 70vh;
+    }
+
+    .menus__menu1--zoom {
+        @include zoomEffectMax568px;
+
+        h2 {
+            font-size: 1em;
         }
-    .menus__menu1--zoom
-        {
-            @include zoomEffectMax568px;
-            h2
-                {
-                    font-size: 1em;
-                }
+    }
+
+    .menus__menu2--zoom,
+    .menus__menu3--zoom {
+        @include zoomEffectMax568px;
+
+        h2 {
+            font-size: 1.8em;
         }
-    .menus__menu2--zoom, .menus__menu3--zoom
-        {
-            @include zoomEffectMax568px;
-            h2
-                {
-                    font-size: 1.8em;
-                }
+    }
+
+    .menus__menu4--zoom {
+        @include zoomEffectMax568px;
+
+        h2 {
+            font-size: 1.4em;
         }
-    .menus__menu4--zoom
-        {
-            @include zoomEffectMax568px;
-            h2
-                {
-                    font-size: 1.4em;
-                }
-        }
+    }
 }
+
 /* Ecrans Tablettes */
-@media (min-width: 568px) and (max-width: 1080px){
-    main
-    {
+@media (min-width: 568px) and (max-width: 1080px) {
+    main {
         margin-bottom: 42vh;
     }
-    .menus
-        {
-            grid-template-columns: 80vw;
-            grid-template-rows: 70vh 70vh 70vh 70vh;
-        }
+
+    .menus {
+        grid-template-columns: 80vw;
+        grid-template-rows: 70vh 70vh 70vh 70vh;
+    }
 }

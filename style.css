@@ -110,7 +110,7 @@ main {
   background: #ffffff;
   display: grid;
   grid-template-columns: 33vw 33vw;
-  grid-template-rows: 100vh 100vh;
+  grid-template-rows: 60vh 60vh;
   grid-column-gap: 6vw;
   grid-row-gap: 11vh;
 }
@@ -171,7 +171,7 @@ main {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom right, #f04a5e 45%, #f78f6a 65%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$startColor", endColorstr="$endColor", GradientType=1);
   /* IE6-9 */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -194,7 +194,7 @@ main {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom right, #e38913 45%, #8f5bfe 65%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$startColor", endColorstr="$endColor", GradientType=1);
   /* IE6-9 */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -217,7 +217,7 @@ main {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom right, #0431df 45%, #0887fb 65%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$startColor", endColorstr="$endColor", GradientType=1);
   /* IE6-9 */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -240,7 +240,7 @@ main {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom right, #42973c 45%, #bfff7e 65%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$startColor", endColorstr="$endColor", GradientType=1);
   /* IE6-9 */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -274,15 +274,18 @@ main {
     font-size: 1em;
   }
 
-  .menus__menu2--zoom, .menus__menu3--zoom {
+  .menus__menu2--zoom,
+.menus__menu3--zoom {
     transform: scale(1);
     transition: transform 600ms, opacity 1000ms;
   }
-  .menus__menu2--zoom:hover, .menus__menu3--zoom:hover {
+  .menus__menu2--zoom:hover,
+.menus__menu3--zoom:hover {
     transform: scale(1.1);
     opacity: 0.6;
   }
-  .menus__menu2--zoom h2, .menus__menu3--zoom h2 {
+  .menus__menu2--zoom h2,
+.menus__menu3--zoom h2 {
     font-size: 1.8em;
   }
 
@@ -322,7 +325,9 @@ main {
   margin-top: 10vh;
 }
 
-.btn__point1, .btn__point2, .btn__point3 {
+.btn__point1,
+.btn__point2,
+.btn__point3 {
   position: relative;
   animation: bounce 900ms ease infinite;
 }
@@ -540,7 +545,7 @@ h4 {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom right, #e38913 45%, #8f5bfe 65%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$startColor", endColorstr="$endColor", GradientType=1);
   /* IE6-9 */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -701,7 +706,7 @@ h4 {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom right, #0431df 45%, #0887fb 65%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$startColor", endColorstr="$endColor", GradientType=1);
   /* IE6-9 */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -834,7 +839,7 @@ h4 {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom right, #42973c 45%, #bfff7e 65%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$startColor", endColorstr="$endColor",GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$startColor", endColorstr="$endColor", GradientType=1);
   /* IE6-9 */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
