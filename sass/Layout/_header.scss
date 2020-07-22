@@ -10,7 +10,8 @@ header
     justify-content: center;
     align-items: center;
     }
-@media (min-width: 280px) and (max-width: 568px){
+/* Ecrans Mobiles */
+@media (min-width: 280px) and (max-width: 567px){
     header 
     {
         height: 80px;

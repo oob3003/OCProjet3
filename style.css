@@ -15,7 +15,8 @@ header {
   align-items: center;
 }
 
-@media (min-width: 280px) and (max-width: 568px) {
+/* Ecrans Mobiles */
+@media (min-width: 280px) and (max-width: 567px) {
   header {
     height: 80px;
     font-size: 1.5em;
@@ -70,7 +71,8 @@ a {
   color: #fdcb46;
 }
 
-@media (min-width: 280px) and (max-width: 568px) {
+/* Ecrans Mobiles */
+@media (min-width: 280px) and (max-width: 567px) {
   footer {
     height: 100px;
   }
@@ -771,7 +773,7 @@ span {
 
 @media (min-width: 280px) and (max-width: 567px) {
   .leDeliceDesPapilles {
-    font-size: large;
+    font-size: medium;
   }
 
   .cartelDDP {
@@ -909,6 +911,12 @@ span {
   .carteMenulPDG li {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+/* Ecrans Tablettes */
+@media (min-width: 568px) and (max-width: 1080px) {
+  .carteMenulPDG__effect--lPDG::before, .carteMenulPDG__effect--lPDG::after {
+    width: 10%;
   }
 }
 

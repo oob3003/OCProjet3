@@ -43,7 +43,8 @@ footer
         text-decoration: none;
         color: $colorPoliceJaune;
     }
-@media (min-width: 280px) and (max-width: 568px){
+/* Ecrans Mobiles */
+@media (min-width: 280px) and (max-width: 567px){
     footer
         {
             height: 100px;

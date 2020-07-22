@@ -98,5 +98,15 @@ span
                     margin-right: 0;
                 }   
         }
-}  
+}
+/* Ecrans Tablettes */
+@media (min-width: 568px) and (max-width: 1080px){
+    .carteMenulPDG
+        {
+            &__effect--lPDG::before, &__effect--lPDG::after
+                {
+                    width: 10%;
+                }
+        }
+    }  
     
