@@ -624,6 +624,10 @@ span {
 
 /* Ecrans Mobiles */
 @media (min-width: 280px) and (max-width: 568px) {
+  .leChicALaFrancaise {
+    font-size: large;
+  }
+
   .cartelCALF {
     margin-top: 2em;
     margin-right: 0.5em;
@@ -632,7 +636,7 @@ span {
   }
 
   .carteMenulCALF__effect--lCALFentrees::before, .carteMenulCALF__effect--lCALFentrees::after, .carteMenulCALF__effect--lCALFplats::before, .carteMenulCALF__effect--lCALFplats::after, .carteMenulCALF__effect--lCALFdesserts::before, .carteMenulCALF__effect--lCALFdesserts::after {
-    width: 10%;
+    width: 5%;
   }
   .carteMenulCALF h2 {
     font-size: 20px;
@@ -860,11 +864,6 @@ h4 {
   margin-right: 5em;
 }
 
-/*  mixin en tant que variable?!    &__effect--lPDGentrees::after
-      {
-          @include colorNameMenu($colorStartMenu4, $colorEndMenu4);
-      }
-  */
 h2:hover {
   background-size: 100% 100%;
 }
@@ -874,6 +873,7 @@ span {
   justify-content: flex-end;
 }
 
+/* Ecrans Mobiles */
 @media (min-width: 280px) and (max-width: 568px) {
   .laPaletteDuGout {
     font-size: large;

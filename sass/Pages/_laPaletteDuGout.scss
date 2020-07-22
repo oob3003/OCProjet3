@@ -57,12 +57,6 @@ h4
             margin-right: 5em;
         }
     }
-
-  /*  mixin en tant que variable?!    &__effect--lPDGentrees::after
-        {
-            @include colorNameMenu($colorStartMenu4, $colorEndMenu4);
-        }
-    */     
 h2:hover 
     {
         background-size: 100% 100%;
@@ -73,6 +67,7 @@ span
         display: flex;
         justify-content: flex-end;
     }
+/* Ecrans Mobiles */
 @media (min-width: 280px) and (max-width: 568px) {
     .laPaletteDuGout
         {
@@ -89,7 +84,7 @@ span
         {
             padding-bottom: 1em;
     
-            &__effect--lPDG::before, &__effect--lPDG::after, 
+            &__effect--lPDG::before, &__effect--lPDG::after 
                 {
                     width: 10%;
                 }

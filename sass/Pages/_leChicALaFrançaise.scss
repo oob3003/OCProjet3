@@ -102,9 +102,9 @@ span
     }
 /* Ecrans Mobiles */
 @media (min-width: 280px) and (max-width: 568px) {
-    h4 
+    .leChicALaFrancaise
         {
-            
+            font-size: large;
         }
     .cartelCALF 
         {
@@ -117,7 +117,7 @@ span
         {
             &__effect--lCALFentrees::before, &__effect--lCALFentrees::after, &__effect--lCALFplats::before, &__effect--lCALFplats::after, &__effect--lCALFdesserts::before, &__effect--lCALFdesserts::after
                 {
-                    width: 10%;
+                    width: 5%;
                 }
             & h2
                 {   
